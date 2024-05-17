@@ -1,0 +1,27 @@
+@charset "UTF-8";
+/* CSS Document */
+
+/*
+This is the CSS file for the column layouts in the CMDA Digital Signage Project
+Default is 50/50, if need to change individually use inline styling.
+*/
+
+.column {
+  padding-right: 20px;
+  padding-left: 20px;
+  float: left;
+  width: 50%;
+}
+
+.left{
+	width: 50%;
+}
+.right{
+	width: 50%;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}

@@ -1,0 +1,103 @@
+@charset "UTF-8";
+/* CSS Document */
+
+/* Styles for Accordions used in the CMDA Digital Signage Project */
+
+.accordion {
+	font-family: "Proxima Nova", sans-serif;
+    font-size: 1.25rem;
+    font-weight: 900;
+    line-height: 1.5rem;
+    color: #502e81;
+    text-transform: none;
+    letter-spacing: .05em;
+    position: relative;
+    display: block;
+    width: 100%;
+    padding: 20px 90px 20px 10px;
+    overflow-wrap: break-word;
+    text-align: left;
+    word-wrap: break-word;
+    background-color: #e9e9e9;
+    border: 0;
+    transition: background-color .3s, color .3s;
+    border-radius: 0;
+    margin-bottom: 2px;
+}
+
+.accordion::after {
+  font-size: 1.5rem; /* Adjust size as needed */
+  position: absolute;
+  right: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+  transition: transform 0.3s ease;
+}
+
+/* Style the '+' sign for the accordion by default */
+.accordion::before,
+.accordion::after {
+    content: '';
+    position: absolute;
+    right: 30px;
+    background-color: #502e81; /* Color of the lines, change as needed */
+    transition: all 0.3s ease;
+}
+
+/* Vertical line of the '+' */
+.accordion::before {
+    top: calc(50% - 10px); /* Adjust the position to be in the middle of the button */
+    height: 20px; /* Length of the vertical line */
+    width: 3px; /* Thickness of the lines */
+	transform: translateX(-8.5px); /* Adjust this value to center the line if needed */
+
+}
+
+/* Horizontal line of the '+' */
+.accordion::after {
+    top: 50%;
+    width: 20px; /* Length of the horizontal line */
+    height: 3px; /* Thickness of the lines */
+    transform: translateY(-50%);
+}
+
+/* Animate the vertical line to disappear when active */
+.active::before {
+    height: 0px; /* Reduce the vertical line height to 0 to make it disappear */
+    top: 50%; /* Keep it centered vertically */
+}
+
+/* Keep the horizontal line for the '-' */
+.active::after {
+    transform: translateY(-50%);
+}
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+.accordion:hover {
+  color: #656565;
+}
+
+.active{
+  color: #656565;
+  margin-bottom: 0;	
+}
+
+/* Style the accordion panel. Note: hidden by default */
+.panel {
+  padding: 0 18px;
+  background-color: white;
+  overflow: hidden;
+  transition: max-height .3s ease-out; /* Add transitions for borders */
+  max-height: 0;
+  border-left: 3px solid #e9e9e9;
+  border-right: 3px solid #e9e9e9;
+
+}
+
+/* When the panel is active, set max-height to a large value so the content can expand */
+.active + .panel {
+  max-height: 500px; /* Adjust this value based on the content size */
+  border-left: 3px solid #e9e9e9;
+  border-right: 3px solid #e9e9e9;
+  border-bottom: 3px solid #e9e9e9;
+}
+

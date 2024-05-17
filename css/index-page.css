@@ -1,0 +1,195 @@
+@charset "UTF-8";
+/* CSS Document */
+
+/* Main styles for the CMDA Digital Signage Project */
+
+body{
+	background-color: #f1f1f1;
+	margin: 0;
+	overflow-x: hidden;
+}
+
+img.qrcode{
+	border-radius: 23%;
+}
+
+h1,h2,h3,h4,h5,h6{
+    font-family: "Proxima Nova",sans-serif;
+    font-weight: 800;/*originally 900*/
+    color: #502e81;
+    margin-bottom: 1.25rem;/*originally 1.25rem*/
+	letter-spacing: .01em;
+}
+h1{
+    font-size: 3rem; /*originally 3rem*/
+    color: #502e81;
+	margin: 30px 0;
+}
+
+h2{
+    font-size: 2rem;/*originally 1.5625rem*/
+    font-weight: 800;/*originally 900*/
+    line-height: 2.1875rem;/*originally 2.1875rem*/
+    letter-spacing: .03em;/*originally .03em*/
+}
+h3{
+    font-weight: 600;  /*originally 600*/
+	font-size: 1.85rem;
+}
+h4, h5{
+    font-weight: 600;  /*originally 600*/
+}
+
+p{
+    font-family: "Proxima Nova", sans-serif;
+    font-style: normal;
+    color: #231f20;
+    font-size: 1.125rem;
+    font-weight: 400; /*originally 500 */
+	line-height: 1.625rem;
+}
+
+.date{
+	color:#f1f1f1;
+}
+
+.lead {
+    font-family: "Proxima Nova",sans-serif;
+    font-size: 1.55rem;/*originally 1.55rem*/
+	line-height: 2rem;
+    font-weight: 600;/*originally 600*/
+    color: #69696D;
+}
+.directory{
+    font-family: "Proxima Nova", sans-serif;
+    font-style: normal;
+    color: #000000;
+    font-size: 1.1rem; /*originally 1.25*/
+	line-height: 1.4rem;
+    font-weight: 500; /*originally 500 */
+}
+
+.room-number{
+	color: #502e81
+}
+
+#Events p{
+    font-style: normal;
+    color: #231f20;
+    font-size: .7rem;
+    font-weight: 400;
+	line-height: 1.25rem;
+}
+
+#Events .lead {
+    font-family: "Proxima Nova",sans-serif;
+    font-size: 1.55rem;/*originally 1.55rem*/
+	line-height: 2rem;
+    font-weight: 600;/*originally 600*/
+    color: #69696D;
+}
+
+#Events .lead {
+    font-family: "Proxima Nova",sans-serif;
+    font-size: 1.55rem;/*originally 1.55rem*/
+	line-height: 2rem;
+    font-weight: 600;/*originally 600*/
+    color: #FFFFFF;
+}
+
+#Events h2{
+	font-size: 0.8rem;
+    font-weight: 850;
+    line-height: 2.1875rem;
+    letter-spacing: .03em;
+}
+
+
+ul {
+    font-family: "Proxima Nova", sans-serif; /* matches the paragraph font family */
+    font-size: 1.125rem;
+    color: #000000; /* matches paragraph text color */
+    margin: 0 0 1em 0; /* optional: aligns with paragraph margins */
+}
+
+ul li {
+    font-weight: 400; /* matches paragraph font weight */
+    margin-bottom: 0.5rem; /* optional: space between list items */
+    /* add more styles as needed */
+}
+
+/* Optional: Style for nested lists */
+ul ul {
+    margin-left: 1.5rem; /* indentation for nested lists */
+}
+
+ol {
+    font-family: "Proxima Nova", sans-serif; /* matches the paragraph font family */
+    font-size: 1.125rem;
+    color: #000000; /* matches paragraph text color */
+    margin: 0 0 1em 0; /* optional: aligns with paragraph margins */
+}
+
+ol li {
+    font-weight: bold; /* matches paragraph font weight */
+    margin-bottom: 0.5rem; /* optional: space between list items */
+    /* add more styles as needed */
+}
+
+
+* {
+  box-sizing: border-box;
+}
+
+/*lsu button css*/
+.btn {
+  padding: 10px 20px;
+  display: inline-block;
+  border-radius: 4px;
+  background-color: #461d7c;
+  font-size: 16px;
+  font-weight: bold;
+  color: #fff;
+  transition-duration: 0.4s;
+  text-decoration: none}
+
+.btn:hover {
+  background-color: #fff;
+  color: #461D7C;
+  box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19); }
+
+
+* {box-sizing: border-box}
+
+.main {
+  margin-left: 500px; /* set to same as the width as .sidenav/width */
+}
+
+div.fixed {
+  position: fixed;
+  width: 50%;
+  bottom: 10px;
+} 
+
+.events-wrapper {
+    position: relative;
+}
+
+.overlay {
+	margin-left: 500px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+	height: 100%;
+    background-color: rgba(255, 255, 255, 0.0); /* Adjust transparency as needed */
+    z-index: 10; /* Ensure this is higher than the content's z-index */
+}
+
+.background-color {
+    background-color: #461d7c;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 10px;
+}

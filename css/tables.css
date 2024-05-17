@@ -1,0 +1,27 @@
+/* Styles for Tables used in the CMDA Digital Signage Project */
+
+body {
+    font-family: "Proxima nova", sans-serif;
+}
+
+table {
+    width: 100%;
+    box-shadow: 0px -2px 0px #f1f1f1;
+    margin: 20px 0;
+}
+
+th, td {
+    padding: 8px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+td {
+    font-size: 1.125rem;
+    font-weight: 400;
+}
+
+th {
+    font-size: 1.125rem;
+    font-weight: bold;
+}

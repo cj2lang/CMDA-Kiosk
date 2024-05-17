@@ -1,0 +1,30 @@
+@charset "UTF-8";
+/* CSS Document */
+
+/* Styles for Clock and Weather used in the CMDA Digital Signage Project */
+
+#clock {
+    bottom: 200px;
+    /*left: 25%;*/
+    font-size: 25px;
+    color: #f1f1f1;
+}
+
+#date {
+    bottom: 200px;
+    /*left: 25%;*/
+    font-size: 25px;
+    color: #f1f1f1;
+}
+
+#weatherInfo, #weatherInfo{
+	padding-left: 25px;
+    bottom: 200px;
+    /*left: 25%;*/
+    font-size: 40px;
+    color: #f1f1f1;
+}
+#weatherInfo, #weatherInfo .material-symbols-outlined {
+  font-size: 40px;
+  vertical-align: center;
+}

@@ -1,0 +1,42 @@
+@charset "UTF-8";
+/* CSS Document */
+
+/* Styles for Hero Images used in the CMDA Digital Signage Project */
+
+.hero-image-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+  height: 200px; /* Set to desired height */
+}
+
+.hero-image {
+  width: 100%;
+  height: auto;
+  object-fit: cover; /* This will cover the area, similar to background-size: cover; */
+}
+
+.hero-image-container::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(
+    to right,
+    rgba(70, 29, 124, 1), /* Left side purple with transparency */
+    transparent 30%,
+    transparent 70%,
+    rgba(70, 29, 124, 1)  /* Right side purple with transparency */
+  );
+  z-index: 1; /* gradient is above the image but below the text */
+}
+
+.hero-text {
+  position: absolute;
+  padding-right: 20px; /* Add some padding if needed */
+}

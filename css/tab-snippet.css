@@ -1,0 +1,75 @@
+@charset "UTF-8";
+/* CSS Document */
+
+/* Styles for Tabs used in the CMDA Digital Signage Project */
+
+.tab-snippet .nav-tabs {
+    margin-top: 40px;
+    display: flex; /* Use flexbox to lay out tabs side by side */
+    padding-left: 0; /* Remove default padding */
+    list-style: none; /* Remove default list styling */
+}
+
+.tab-snippet .nav-tabs .nav-item {
+    margin-bottom: -4px;
+    margin-top: 0;
+    background-color: #fff;
+    border-bottom: 4px solid #ececec;
+}
+
+.tab-snippet .nav-tabs .nav-link {
+    border: none;
+    border-radius: 0;
+    font-size: 20px;
+    color: #502e81;
+    padding: 12px 30px 8px;
+    text-decoration: none;
+    font-weight: bold;
+    display: block; /* Ensure links take up the full space of the li */
+}
+
+.tab-snippet .nav-tabs .nav-link.active, .nav-tabs .nav-item.show .nav-link {
+    border-bottom: 4px solid #ffe191;
+    border-left: none;
+    border-right: none;
+    font-size: 20px;
+    background-color: #fff;
+    position: relative;
+}
+
+/* This style removes the yellow box below the tab headers */
+.tab-snippet .nav-tabs .nav-link.active:after, .nav-tabs .nav-item.show .nav-link:after {
+    display: none;
+}
+
+.tab-snippet .nav-tabs .nav-link:after {
+    content: none;
+}
+
+.tab-snippet .nav-tabs .nav-item:last-child .nav-link {
+    border-right: none;
+}
+
+.tab-snippet .nav-tabs .nav-link:hover {
+    text-decoration: none;
+}
+
+.tab-snippet .nav-tabs .nav-link.active:hover {
+    border-bottom-color: #feca35;
+}
+
+.tab-snippet .tab-info {
+    display: none; /* Hide all tab content by default */
+    text-align: left;
+    padding: 20px;
+    background-color: #fff;
+    margin-bottom: 50px;
+}
+
+.tab-snippet .tab-info.active {
+    display: block; /* Show active tab content */
+}
+
+.tab-snippet .tab-info h3 {
+    margin: 20px 0;
+}

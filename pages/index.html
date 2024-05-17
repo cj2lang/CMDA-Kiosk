@@ -1,0 +1,1944 @@
+<!DOCTYPE HTML>
+<html lang="en">
+   <head><meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+      <meta charset="UTF-8">
+      <meta http-equiv="x-ua-compatible" content="text/html; charset=utf-8" />
+      <title>Digital Signage Home Page</title>
+      <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+	  
+<!-- CSS Files, located in /CMDA-KIOSK/css/ -->
+<link href="{{f:60748343}}" rel="stylesheet"> <!-- Index -->
+<link href="{{f:60748572}}" rel="stylesheet"> <!-- Navigation -->
+<link href="{{f:60748598}}" rel="stylesheet"> <!-- Column Layout -->
+<link href="{{f:60748348}}" rel="stylesheet"> <!-- Clock/Weather -->
+<link href="{{f:61117614}}" rel="stylesheet"> <!-- Stat Section -->
+<link href="{{f:62598627}}" rel="stylesheet"> <!-- Tab Snippet -->
+<link href="{{f:62627709}}" rel="stylesheet"> <!-- Slideshow -->
+<link href="{{f:63358136}}" rel="stylesheet"> <!-- Hero -->
+<link href="{{f:63358139}}" rel="stylesheet"> <!-- Accordion -->
+<link href="{{f:64838829}}" rel="stylesheet"> <!-- Tables -->
+
+<link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" rel="stylesheet">   <!-- animations/transitions -->
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet">         <!-- weather fonts -->
+
+<!--<link href="https://lsu.edu/_resources_fierce/css/styles.css" rel="stylesheet"> -->
+</head>
+	
+<body style="padding-top: 0px;"><header></header>
+
+<!-- Start of Navigation Section -->
+<nav>
+<div class="tab">
+	
+  <img src="{{f:60336945}}" alt="cmda logo" class="sidenav-img">   <!-- Logo at top left -->
+
+  <!-- Start of Nav Buttons -->
+  <button class="tablinks" onclick="openCity(event, 'Home')" id="defaultOpen" style="background-image: url('{{f:63742710}}');">Home</button>
+  <button class="tablinks" onclick="openCity(event, 'Directory')" style="background-image: url('{{f:63743145}}');">Directory</button>
+  <button class="tablinks" onclick="openCity(event, 'Map')"  style="background-image: url('{{f:64147888}}');">Campus Map</button>
+  <button class="tablinks" onclick="openCity(event, 'Events')"  style="background-image: url('{{f:64368463}}');">Events</button>
+  <button class="tablinks" onclick="openCity(event, 'Education')" style="background-image: url('{{f:63742709}}');">Education</button>
+  <button class="tablinks" onclick="openCity(event, 'Giving')" style="background-image: url('{{f:64147887}}');">Giving</button>
+  <!-- End of Nav Buttons -->
+
+  <!-- Start of Date, Time, Weather, Refresh, Separated into three columns -->
+<div class="row">
+  <div class="column" style="width:30%">
+    <center><p class="date"><span id="date"></span><br /><span id="clock"></span></p></center>
+  </div>
+  <div class="column" style="width:40%">
+    <center><p><span id="weatherInfo">Fetching weather...</span></p></center>
+  </div>
+  <div class="column" style="width:30%">
+    <center><button class="refresh" onclick="location.reload()"><span class="material-symbols-outlined">restart_alt</span></button></center>
+  </div>
+</div>
+  <!-- End of Date, Time, Weather, Refresh -->
+
+</div>
+</nav>
+<!-- End of Navigation Section -->
+
+<!-- Start of Main Section -->
+<main>
+<div class="main">
+	
+<!-- Start of Home Section -->
+<div id="Home" class="tabcontent animate__animated">
+<div class="hero-image-container">
+  <img src="{{f:64400249}}" alt="Hero Image" class="hero-image">
+  <div class="hero-text">
+    <h1 style="color: white">Home</h1>
+  </div>
+</div>
+<p class="lead" style="padding:0px 20px 0px 20px;">For more than a century, LSU has cultivated a rich tradition of excellence in music, theater, dance, and film. We take great pride in the roles played by our faculty, staff, students, and alumni in preserving and growing the thriving arts communities of Louisiana, the region, the nation, and the world.</p>	
+<p class="lead" style="padding:0px 20px 0px 20px;">LSU’s earliest explorations of music and the arts date back to the military band traditions of the "Old War Skule" in the late 1800s. This history winds through a transformative century of development, expansion, global conflicts, and restructuring, evolving into the modern performing arts institution you see today, dedicated to the development of skillful learners who are adaptable creative artists and engaged global citizens.</p>
+<h2 style="padding:0px 20px 0px 20px;">Our College By The Numbers</h2>
+	
+  <div class="row">
+	<!-- Start of Stats Section -->
+	<div class="column" style="width: 33%"> <!-- Left Column -->
+		<section class="stats dark">
+        	<div class="wrap" style="background-image:url(/cmda/music/images/programs/music-wide-general-4.jpg);">
+            <h2>450+</h2>
+            <p>Undergraduate Students</p>
+			<span class="footnote">&nbsp;</span>
+        </div>
+    </section>
+	</div>
+	<div class="column" style="width: 33%"> <!-- Center Column -->
+		<section class="stats dark">
+        	<div class="wrap" style="background-image:url(/cmda/theatre/images/img-decorative/film_tv_small.jpg);">
+            <h2>110+</h2>
+            <p>Graduate Students</p>
+			<span class="footnote">&nbsp;</span>
+        </div>
+    </section>
+	</div>
+	<div class="column" style="width: 33%"> <!-- Right Column -->
+		<section class="stats dark">
+        	<div class="wrap" style="background-image:url(/cmda/images/galleries/tigerama-concert.jpg);">
+            <h2>300+</h2>
+            <p>Fine Arts Events Each Year</p>
+			<span class="footnote">&nbsp;</span>
+        </div>
+    </section>
+	</div>
+	<!-- End of Stats Section -->
+  </div>
+<br />
+  <div class="row">
+	<!-- Start of Stats Section -->
+	<div class="column" style="width: 33%"> <!-- Left Column -->
+		<section class="stats dark">
+        	<div class="wrap" style="background-image:url(/cmda/music/images/programs/music-wide-opera-2.jpg);">
+            <h2>$4 MM</h2>
+            <p>Opera Endowment</p>
+			<span class="footnote">&nbsp;</span>
+        </div>
+    </section>
+	</div>
+	<div class="column" style="width: 33%"> <!-- Center Column -->
+		<section class="stats dark">
+        	<div class="wrap" style="background-image:url(/cmda/music/images/programs/music-wide-emdm-2.jpg);">
+            <h2>Over 50</h2>
+            <p>Research Articles &amp; Presentations</p>
+			<span class="footnote">*In Academic Year 2023-2024</span>
+        </div>
+    </section>
+	</div>
+	<div class="column" style="width: 33%"> <!-- Right Column -->
+		<section class="stats dark">
+        	<div class="wrap" style="background-image:url(/cmda/music/images/programs/university-wide-commencement.jpg);">
+            <h2>#1</h2>
+            <p>Ranked Public University in Louisiana</p>
+			<span class="footnote">*Wall Street Journal, 2024</span>
+        </div>
+    </section>
+	</div>
+	<!-- End of Stats Section -->
+  </div>
+	
+	
+  <!-- Start of Slideshow Section -->
+<!--   <div class="slideshow-container">
+  	<div class="slide">
+   		 <img src="{{f:46498996}}" alt="Image 1">
+ 		</div>
+  		<div class="slide">
+   			<img src="{{f:61771548}}" alt="Image 2">
+  		</div>
+  		<div class="slide">
+   			<img src="{{f:57407442}}" alt="Image 3">
+  	</div>
+  </div> -->
+	<!-- End of Slideshow Section -->
+	
+</div>
+<!-- End of Home Section -->
+	
+<!-- Start of Directory Section -->
+<div id="Directory" class="tabcontent animate__animated">
+<div class="hero-image-container">
+  <img src="{{f:64400252}}" alt="Hero Image" class="hero-image">
+  <div class="hero-text">
+    <h1 style="color: white">Directory</h1>
+  </div>
+</div>	
+<div style="padding: 0px 12px;" class="tab-snippet">
+    <!-- Nav tabs -->
+    <ul class="nav nav-tabs">
+        <li class="nav-item">
+           <a class="nav-link active" data-toggle="tab" href="#SOM">School of Music Building</a>
+       </li>
+        <li class="nav-item">
+           <a class="nav-link" data-toggle="tab" href="#CMDA">Music &amp; Dramatic Arts Building</a>
+       </li>
+        <li class="nav-item">
+           <a class="nav-link" data-toggle="tab" href="#Contact">Contact Information</a>
+       </li>
+    </ul>
+   	<!-- Tab panes -->
+    <div class="tab-content">
+        <div id="SOM" class="tab-info active" style="background-color: #f1f1f1">
+		<div class="column" style="width: 100%">
+  			<div class="row">                                 <!-- ** Row 1/9  ** -->
+    			<div class="column" style="width: 20%">
+					<center><img class="img-fluid" src="{{f:65287209}}" alt="image of ross ahlhorn" width="100%" height="100%" /></center>
+					<h3 style="margin-top: 0;">Ross<br />Ahlhorn</h3>
+					<p class="directory">Assistant Professor<br />Trumpet<br /><span class="room-number">SOM 226</span></p>	
+				</div>
+    			<div class="column" style="width: 20%">
+					<center><img class="img-fluid" src="{{f:57861985}}" alt="image of nanci belmont" width="100%" height="100%" /></center>
+					<h3 style="margin-top: 0;">Nanci<br />Belmont</h3>
+					<p class="directory">Assistant Professor<br />Bassoon<br /><span class="room-number">SOM 216</span></p>
+				</div>
+    			<div class="column" style="width: 20%">
+					<center><img class="img-fluid" src="{{f:64997283}}" alt="image of john bishop" width="100%" height="100%" /></center>
+					<h3 style="margin-top: 0;">John<br />Bishop</h3>
+					<p class="directory">Instructor<br />Guitar<br /><span class="room-number">SOM 229</span></p>	
+	  			</div>
+				<div class="column" style="width: 20%">
+					<center><img class="img-fluid" src="{{f:63348663}}" alt="image of lindsay kate brown" width="100%" height="100%" /></center>
+					<h3 style="margin-top: 0;">Lindsay Kate<br />Brown</h3>
+					<p class="directory">Assistant Professor<br />Voice<br /><span class="room-number">SOM 312</span></p>
+	  			</div>
+				<div class="column" style="width: 20%">
+					<center><img class="img-fluid" src="{{f:42236970}}" alt="image of james byo" width="100%" height="100%" /></center>
+					<h3 style="margin-top: 0;">James<br />Byo</h3>
+					<p class="directory">Director, School of Music<br />Professor,&nbsp;Music Education<br /><span class="room-number">SOM 102B</span></p>
+	  			</div>
+  			</div>
+		</div>
+		<div class="column" style="width: 100%">
+  			<div class="row">                                 <!-- ** Row 2/9  ** -->
+    			<div class="column" style="width: 20%">
+					<center><img class="img-fluid" src="{{f:42238463}}" alt="image of leonce clement" width="100%" height="100%" /></center>
+					<h3 style="margin-top: 0;">Leonce<br />Clement</h3>
+					<p class="directory">Creative<br />Coordinator<br /><span class="room-number">SOM 102C</span></p>
+	  			</div>
+    			<div class="column" style="width: 20%">
+					<center><img class="img-fluid" src="{{f:54010860}}" alt="image of trey davis" width="100%" height="100%" /></center>
+					<h3 style="margin-top: 0;">Trey<br />Davis</h3>
+					<p class="directory">Assistant Director, Choirs<br />Associate Professor<br /><span class="room-number">SOM 112</span></p>
+	  			</div>
+				<div class="column" style="width: 20%">
+					<center><img class="img-fluid" src="{{f:48867660}}" alt="image of willis delony" width="100%" height="100%" /></center>
+					<h3 style="margin-top: 0;">Willis<br />Delony</h3>
+					<p class="directory">Boyd Professor<br />Keyboard &amp; Jazz Studies<br /><span class="room-number">SOM 328</span></p>
+	  			</div>
+    			<div class="column" style="width: 20%">
+					<center><img class="img-fluid" src="{{f:63199791}}" alt="image of david dockan" width="100%" height="100%" /></center>
+					<h3 style="margin-top: 0;">David<br />Dockan</h3>
+					<p class="directory">Assistant Professor<br />Music Education<br /><span class="room-number"></span></p>
+	  			</div>
+				<div class="column" style="width: 20%">
+					<center><img class="img-fluid" src="{{f:51574148}}" alt="image of charles goodman" width="100%" height="100%" /></center>
+					<h3 style="margin-top: 0;">Charles<br />Goodman</h3>
+					<p class="directory">Assistant Professor<br />Tuba &amp; Euphonium<br /><span class="room-number">SOM 314</span></p>
+	  			</div>
+  			</div>
+		</div>
+		<div class="column" style="width: 100%">
+  			<div class="row">                                 <!-- ** Row 3/9 ** -->
+				<div class="column" style="width: 20%">
+					<center><img class="img-fluid" src="{{f:58361182}}" alt="image of robert grayson" width="100%" height="100%" /></center>
+					<h3 style="margin-top: 0;">Robert<br />Grayson</h3>
+					<p class="directory">Professor Emeritus<br />Voice<br /><span class="room-number">SOM 317</span></p>
+	  			</div>
+    			<div class="column" style="width: 20%">
+					<center><img class="img-fluid" src="{{f:51551914}}" alt="image of paul groves" width="100%" height="100%" /></center>
+					<h3 style="margin-top: 0;">Paul<br />Groves</h3>
+					<p class="directory">Artist-in-Residence<br />Voice<br /><span class="room-number">SOM 317</span></p>
+	  			</div>
+    			<div class="column" style="width: 20%">
+					<center><img class="img-fluid" src="{{f:42399915}}" alt="image of michael gurt" width="100%" height="100%" /></center>
+					<h3 style="margin-top: 0;">Michael<br />Gurt</h3>
+					<p class="directory">Professor<br />Piano<br /><span class="room-number">SOM 320</span></p>
+	  			</div>
+    			<div class="column" style="width: 20%">
+					<center><img class="img-fluid" src="{{f:63199792}}" alt="image of faith hall" width="100%" height="100%" /></center>
+					<h3 style="margin-top: 0;">Faith<br />Hall</h3>
+					<p class="directory">Assistant Professor<br />Music Education<br /><span class="room-number"></span></p>
+	  			</div>
+    			<div class="column" style="width: 20%">
+					<center><img class="img-fluid" src="{{f:57921550}}" alt="image of terry patrick harris" width="100%" height="100%" /></center>
+					<h3 style="margin-top: 0;">Terry<br />Patrick-Harris</h3>
+					<p class="directory">Professional-in-Residence<br />Voice<br /><span class="room-number">SOM 308</span></p>
+	  			</div>
+  			</div>
+		</div>
+		<div class="column" style="width: 100%">
+  			<div class="row">                                 <!-- ** Row 4/9  ** -->
+				<div class="column" style="width: 20%">
+					<center><img class="img-fluid" src="{{f:42399486}}" alt="image of zachary hazelwood" width="100%" height="100%" /></center>
+					<h3 style="margin-top: 0;">Zachary<br />Hazelwood</h3>
+					<p class="directory">Director of Operations &amp;<br />Production Manager<br /><span class="room-number">SOM 109</span></p>
+	  			</div>
+				<div class="column" style="width: 20%">
+					<center><img class="img-fluid" src="{{f:51551908}}" alt="image of lin he" width="100%" height="100%" /></center>
+					<h3 style="margin-top: 0;">Lin<br />He</h3>
+					<p class="directory">Associate Professor<br />Violin<br /><span class="room-number">SOM 321</span></p>
+	  			</div>
+				<div class="column" style="width: 20%">
+					<center><img class="img-fluid" src="{{f:55990457}}" alt="image of lawrence hebert" width="100%" height="100%" /></center>
+					<h3 style="margin-top: 0;">Lawrence<br />Hebert</h3>
+					<p class="directory">Director<br />Gospel Choir<br /><span class="room-number"></span></p>
+	  			</div>
+    			<div class="column" style="width: 20%">
+					<center><img class="img-fluid" src="{{f:51552461}}" alt="image of brandon hendrickson" width="100%" height="100%" /></center>
+					<h3 style="margin-top: 0;">Brandon<br />Hendrickson</h3>
+					<p class="directory">Associate Professor<br />Voice<br /><span class="room-number">SOM 111</span></p>
+	  			</div>
+    			<div class="column" style="width: 20%">
+					<center><img class="img-fluid" src="{{f:42399915}}" alt="image of dennis jesse" width="100%" height="100%" /></center>
+					<h3 style="margin-top: 0;">Dennis<br />Jesse</h3>
+					<p class="directory">Professor<br />Voice<br /><span class="room-number">SOM 306</span></p>
+	  			</div>
+  			</div>
+		</div>
+		<div class="column" style="width: 100%">
+  			<div class="row">                                 <!-- ** Row 5/9  ** -->
+    			<div class="column" style="width: 20%">
+					<center><img class="img-fluid" src="{{f:51574136}}" alt="image of cecilia kang" width="100%" height="100%" /></center>
+					<h3 style="margin-top: 0;">Cecilia<br />Kang</h3>
+					<p class="directory">Associate Professor<br />Clarinet<br /><span class="room-number">SOM 207</span></p>
+	  			</div>
+				<div class="column" style="width: 20%">
+					<center><img class="img-fluid" src="{{f:43663691}}" alt="image of bill kelley" width="100%" height="100%" /></center>
+					<h3 style="margin-top: 0;">Bill<br />Kelley</h3>
+					<p class="directory">Manager<br />Recording Studio<br /><span class="room-number">SOM Recording Studio</span></p>
+	  			</div>
+				<div class="column" style="width: 20%">
+					<center><img class="img-fluid" src="{{f:51551888}}" alt="image of penny kemler" width="100%" height="100%" /></center>
+					<h3 style="margin-top: 0;">Penny<br />Kemler</h3>
+					<p class="directory">Professor<br />Flute<br /><span class="room-number">SOM 202</span></p>
+	  			</div>
+    			<div class="column" style="width: 20%">
+					<center><img class="img-fluid" src="{{f:51574191}}" alt="image of elena lacheva" width="100%" height="100%" /></center>
+					<h3 style="margin-top: 0;">Elena<br />Lacheva</h3>
+					<p class="directory">Professional-in-Residence<br />Piano<br /><span class="room-number">SOM 213</span></p>
+	  			</div>
+   			<div class="column" style="width: 20%">
+					<center><img class="img-fluid" src="{{f:51551849}}" alt="image of espen lilleslåtten" width="100%" height="100%" /></center>
+					<h3 style="margin-top: 0;">Espen<br />Lilleslåtten</h3>
+					<p class="directory">Associate Professor<br />Violin<br /><span class="room-number">SOM 220</span></p>
+	  			</div>
+  			</div>
+		</div>
+		<div class="column" style="width: 100%">
+  			<div class="row">                                 <!-- ** Row 6/9  ** -->
+    			<div class="column" style="width: 20%">
+					<center><img class="img-fluid" src="{{f:57694924}}" alt="image of nathaniel malkow" width="100%" height="100%" /></center>
+					<h3 style="margin-top: 0;">Nathaniel<br />Malkow</h3>
+					<p class="directory">Recruiter<br />School of Music<br /><span class="room-number">SOM 102</span></p>
+	  			</div>
+				<div class="column" style="width: 20%">
+					<center><img class="img-fluid" src="{{f:58321395}}" alt="image of sandra moon" width="100%" height="100%" /></center>
+					<h3 style="margin-top: 0;">Sandra<br />Moon</h3>
+					<p class="directory">Associate Professor<br />Voice<br /><span class="room-number">SOM 303</span></p>
+	  			</div>
+				<div class="column" style="width: 20%">
+					<center><img class="img-fluid" src="{{f:48230415}}" alt="image of brian nabors" width="100%" height="100%" /></center>
+					<h3 style="margin-top: 0;">Brian<br />Nabors</h3>
+					<p class="directory">Assistant Professor<br />Composition<br /><span class="room-number">SOM 222</span></p>
+	  			</div>
+				<div class="column" style="width: 20%">
+					<center><img class="img-fluid" src="{{f:51551825}}" alt="image of ana maría otamendi" width="100%" height="100%" /></center>
+					<h3 style="margin-top: 0;">Ana María<br />Otamendi</h3>
+					<p class="directory">Associate Professor<br />Collaborative Piano<br /><span class="room-number">SOM 307</span></p>
+				  </div>
+				<div class="column" style="width: 20%">
+					<center><img class="img-fluid" src="{{f:64958889}}" alt="image of andrew w. parker" width="100%" height="100%" /></center>
+					<h3 style="margin-top: 0;">Andrew W.<br />Parker</h3>
+					<p class="directory">Associate Professor<br />Oboe<br /><span class="room-number">SOM 217</span></p>
+	  			</div>
+  			</div>
+		</div>
+		<div class="column" style="width: 100%">
+			  <div class="row">                                 <!-- ** Row 7/9  ** -->
+				<div class="column" style="width: 20%">
+					<center><img class="img-fluid" src="{{f:42399915}}" alt="image of dennis parker" width="100%" height="100%" /></center>
+					<h3 style="margin-top: 0;">Dennis<br />Parker</h3>
+					<p class="directory">Professor<br />Cello<br /><span class="room-number">SOM 219</span></p>
+				  </div>
+				<div class="column" style="width: 20%">
+					<center><img class="img-fluid" src="{{f:48149762}}" alt="image of molly redfield" width="100%" height="100%" /></center>
+					<h3 style="margin-top: 0;">Molly<br />Redfield</h3>
+					<p class="directory">Assistant Professor<br />Jazz Studies<br /><span class="room-number">SOM 316</span></p>
+				  </div>
+				<div class="column" style="width: 20%">
+					<center><img class="img-fluid" src="{{f:51514362}}" alt="image of kaitlin richard" width="100%" height="100%" /></center>
+					<h3 style="margin-top: 0;">Kaitlin<br />Richard</h3>
+					<p class="directory">Assistant to the Director<br />School of Music<br /><span class="room-number">SOM 102</span></p>
+				  </div>
+				<div class="column" style="width: 20%">
+					<center><img class="img-fluid" src="{{f:48465935}}" alt="image of alissa rowe" width="100%" height="100%" /></center>
+					<h3 style="margin-top: 0;">Alissa<br />Rowe</h3>
+					<p class="directory">Director of Choral Studies<br />Associate Professor<span class="room-number">SOM 205</span></p>
+				  </div>
+				<div class="column" style="width: 20%">
+					<center><img class="img-fluid" src="{{f:42398720}}" alt="image of joe rush" width="100%" height="100%" /></center>
+					<h3 style="margin-top: 0;">Joe<br />Rush</h3>
+					<p class="directory">Piano<br />Technician<br /><span class="room-number">SOM 119</span></p>
+	  			</div>
+			  </div>
+		</div>
+		<div class="column" style="width: 100%">
+  			<div class="row">                                 <!-- ** Row 8/9  ** -->
+    			<div class="column" style="width: 20%">
+					<center><img class="img-fluid" src="{{f:51552385}}" alt="image of kristin scioneaux" width="100%" height="100%" /></center>
+					<h3 style="margin-top: 0;">Kristin<br />Scioneaux</h3>
+					<p class="directory">Staff Accompanist<br />Piano<br /><span class="room-number">SOM 323</span></p>
+	  			</div>
+    			<div class="column" style="width: 20%">
+					<center><img class="img-fluid" src="{{f:51582280}}" alt="image of loraine sims" width="100%" height="100%" /></center>
+					<h3 style="margin-top: 0;">Loraine<br />Sims</h3>
+					<p class="directory">Professor<br />Voice<br /><span class="room-number">SOM 305</span></p>
+	  			</div>
+				<div class="column" style="width: 20%">
+					<center><img class="img-fluid" src="{{f:42398744}}" alt="image of amy smith" width="100%" height="100%" /></center>
+					<h3 style="margin-top: 0;">Amy<br />Smith</h3>
+					<p class="directory">Assistant Dean<br />Office of Student Success<br /><span class="room-number">SOM 102A</span></p>
+	  			</div>
+				<div class="column" style="width: 20%">
+					<center><img class="img-fluid" src="{{f:42399915}}" alt="image of d. j. sparr" width="100%" height="100%" /></center>
+					<h3 style="margin-top: 0;">D. J.<br />Sparr</h3>
+					<p class="directory">Adjunct Professor<br />Composition<br /><span class="room-number">SOM 203</span></p>
+				  </div>
+				<div class="column" style="width: 20%">
+					<center><img class="img-fluid" src="{{f:51574202}}" alt="image of kimberly sparr" width="100%" height="100%" /></center>
+					<h3 style="margin-top: 0;">Kimberly<br />Sparr</h3>
+					<p class="directory">Associate Professor<br />Viola<br /><span class="room-number">SOM 221</span></p>
+				  </div>
+  			</div>
+		</div>
+		<div class="column" style="width: 100%">
+			  <div class="row">                                 <!-- ** Row 9/9  ** -->
+				<div class="column" style="width: 20%">
+					<center><img class="img-fluid" src="{{f:51552640}}" alt="image of doug stone" width="100%" height="100%" /></center>
+					<h3 style="margin-top: 0;">Doug<br />Stone</h3>
+					<p class="directory">Associate Professor<br />Jazz Studies<br /><span class="room-number">SOM 113</span></p>
+				  </div>
+				<div class="column" style="width: 20%">
+					<center><img class="img-fluid" src="{{f:42316785}}" alt="image of scott terrell" width="100%" height="100%" /></center>
+					<h3 style="margin-top: 0;">Scott<br />Terrell</h3>
+					<p class="directory">Director, Orchestral Studies<br />Associate Professor<br /><span class="room-number">SOM 204</span></p>
+				  </div>
+				<div class="column" style="width: 20%">
+					<center><img class="img-fluid" src="{{f:42399915}}" alt="image of yung-chiao wei" width="100%" height="100%" /></center>
+					<h3 style="margin-top: 0;">Yung-chiao<br />Wei</h3>
+					<p class="directory">Professor<br />Double Bass<br /><span class="room-number">SOM 127</span></p>
+	  			</div>
+				<div class="column" style="width: 20%">
+					<center><img class="img-fluid" src="{{f:64047553}}" alt="image of kendra wheeler" width="100%" height="100%" /></center>
+					<h3 style="margin-top: 0;">Kendra<br />Wheeler</h3>
+					<p class="directory">Assistant Professor<br />Saxophone<br /><span class="room-number">SOM 211</span></p>
+				  </div>
+    			<div class="column" style="width: 20%">
+					<p class="directory">&nbsp;</p>
+	  			</div>
+			  </div>
+		</div>
+	</div>
+        <div id="CMDA" class="tab-info" style="background-color: #f1f1f1">
+		<div class="column" style="width: 100%">
+  			<div class="row">                                 <!-- ** Row 1/11  ** -->
+    			<div class="column" style="width: 20%">
+					<center><img class="img-fluid" src="{{f:59038209}}" alt="image of drew alvarez" width="100%" height="100%" /></center>
+					<h3 style="margin-top: 0;">Drew<br />Alvarez</h3>
+					<p class="directory">Theatre Front Office<br />Box Office Coordinator<br /><span class="room-number">MDA 105</span></p>	
+				</div>
+    			<div class="column" style="width: 20%">
+					<center><img class="img-fluid" src="{{f:42526504}}" alt="image of jesse allison" width="100%" height="100%" /></center>
+					<h3 style="margin-top: 0;">Jesse<br />Allison</h3>
+					<p class="directory">Associate Professor<br />EMDM<br /><span class="room-number">MDA 295</span></p>
+				</div>
+    			<div class="column" style="width: 20%">
+					<center><img class="img-fluid" src="{{f:61294453}}" alt="image of inessa bazayev" width="100%" height="100%" /></center>
+					<h3 style="margin-top: 0;">Inessa<br />Bazayev</h3>
+					<p class="directory">Professor<br />Music Theory<br /><span class="room-number">MDA 267</span></p>	
+	  			</div>
+				<div class="column" style="width: 20%">
+					<center><img class="img-fluid" src="{{f:42399915}}" alt="image of rebecca bellelo" width="100%" height="100%" /></center>
+					<h3 style="margin-top: 0;">Rebecca<br />Bellelo</h3>
+					<p class="directory">Instructor<br />Piano Pedagogy<br /><span class="room-number">Pedagogy Library</span></p>
+	  			</div>
+				<div class="column" style="width: 20%">
+					<center><img class="img-fluid" src="{{f:42500107}}" alt="image of michael borowitz" width="100%" height="100%" /></center>
+					<h3 style="margin-top: 0;">Michael<br />Borowitz</h3>
+					<p class="directory">Associate Professor<br />Opera Coach<br /><span class="room-number">MDA 230</span></p>
+	  			</div>
+  			</div>
+		</div>
+		<div class="column" style="width: 100%">
+  			<div class="row">                                 <!-- ** Row 2/11 ** -->
+				<div class="column" style="width: 20%">
+					<center><img class="img-fluid" src="{{f:51574118}}" alt="image of brett boutwell" width="100%" height="100%" /></center>
+					<h3 style="margin-top: 0;">Brett<br />Boutwell</h3>
+					<p class="directory">Asssociate Professor<br />Musicology<br /><span class="room-number">MDA 269</span></p>
+	  			</div>
+    			<div class="column" style="width: 20%">
+					<center><img class="img-fluid" src="{{f:51514024}}" alt="image of jason bowers" width="100%" height="100%" /></center>
+					<h3 style="margin-top: 0;">Jason<br />Bowers</h3>
+					<p class="directory">Instructor<br />Music Education<br /><span class="room-number">MDA 265</span></p>	
+	  			</div>
+    			<div class="column" style="width: 20%">
+					<center><img class="img-fluid" src="{{f:42648841}}" alt="image of sonya cooke" width="100%" height="100%" /></center>
+					<h3 style="margin-top: 0;">Sonya<br />Cooke</h3>
+					<p class="directory">Assistant Professor<br />Acting<br /><span class="room-number">MDA 384</span></p>
+	  			</div>
+    			<div class="column" style="width: 20%">
+					<center><img class="img-fluid" src="{{f:59051433}}" alt="image of brett dietz" width="100%" height="100%" /></center>
+					<h3 style="margin-top: 0;">Brett<br />Dietz</h3>
+					<p class="directory">Professor<br />Percussion<br /><span class="room-number">MDA B29</span></p>
+	  			</div>
+				<div class="column" style="width: 20%">
+					<center><img class="img-fluid" src="{{f:59258079}}" alt="image of rob dowie" width="100%" height="100%" /></center>
+					<h3 style="margin-top: 0;">Rob<br />Dowie</h3>
+					<p class="directory">Director of Operations<br />Department of Bands<br /><span class="room-number">MDA 120</span></p>
+	  			</div>
+  			</div>
+		</div>
+		<div class="column" style="width: 100%">
+  			<div class="row">                                 <!-- ** Row 3/11 ** -->
+				<div class="column" style="width: 20%">
+					<center><img class="img-fluid" src="{{f:59258085}}" alt="image of kara duplantier" width="100%" height="100%" /></center>
+					<h3 style="margin-top: 0;">Kara<br />Duplantier</h3>
+					<p class="directory">Business Manager<br />Department of Bands<br /><span class="room-number">BND 292</span></p>
+	  			</div>
+				<div class="column" style="width: 20%">
+					<center><img class="img-fluid" src="{{f:42648854}}" alt="image of john eddy" width="100%" height="100%" /></center>
+					<h3 style="margin-top: 0;">John<br />Eddy</h3>
+					<p class="directory">Professional-in-Residence<br />Props Master<br /><span class="room-number">MDA 155</span></p>
+	  			</div>
+    			<div class="column" style="width: 20%">
+					<center><img class="img-fluid" src="{{f:42648838}}" alt="image of nick erickson" width="100%" height="100%" /></center>
+					<h3 style="margin-top: 0;">Nick<br />Erickson</h3>
+					<p class="directory">Associate Professor<br />Movement<br /><span class="room-number">MDA 381</span></p>
+	  			</div>
+    			<div class="column" style="width: 20%">
+					<center><img class="img-fluid" src="{{f:42648837}}" alt="image of femi euba" width="100%" height="100%" /></center>
+					<h3 style="margin-top: 0;">Femi<br />Euba</h3>
+					<p class="directory">Professor<br />Black Drama &amp; Playwriting<br /><span class="room-number">MDA 321</span></p>
+	  			</div>
+    			<div class="column" style="width: 20%">
+					<center><img class="img-fluid" src="{{f:42648843}}" alt="image of melissa fay" width="100%" height="100%" /></center>
+					<h3 style="margin-top: 0;">Melissa<br />Fay</h3>
+					<p class="directory">Business Manager<br />School of Theatre<br /><span class="room-number">MDA 111</span></p>
+	  			</div>
+  			</div>
+		</div>
+		<div class="column" style="width: 100%">
+  			<div class="row">                                 <!-- ** Row 4/11  ** -->
+				<div class="column" style="width: 20%">
+					<center><img class="img-fluid" src="{{f:42648858}}" alt="image of john fletcher" width="100%" height="100%" /></center>
+					<h3 style="margin-top: 0;">John<br />Fletcher</h3>
+					<p class="directory">Associate Professor<br />Theatre History<br /><span class="room-number">MDA 325</span></p>
+	  			</div>
+				<div class="column" style="width: 20%">
+					<center><img class="img-fluid" src="{{f:50411686}}" alt="image of kamille geist" width="100%" height="100%" /></center>
+					<h3 style="margin-top: 0;">Kamile<br />Geist</h3>
+					<p class="directory">Associate Professor<br />Music Therapy<br /><span class="room-number">MDA 259</span></p>
+	  			</div>
+				<div class="column" style="width: 20%">
+					<center><img class="img-fluid" src="{{f:51578382}}" alt="image of mara gibson" width="100%" height="100%" /></center>
+					<h3 style="margin-top: 0;">Mara<br />Gibson</h3>
+					<p class="directory">Associate Professor<br />Composition<br /><span class="room-number">MDA 225</span></p>
+	  			</div>
+    			<div class="column" style="width: 20%">
+					<center><img class="img-fluid" src="{{f:51564218}}" alt="image of andreas giger" width="100%" height="100%" /></center>
+					<h3 style="margin-top: 0;">Andreas<br />Giger</h3>
+					<p class="directory">Professor<br />Musicology<br /><span class="room-number">MDA 283</span></p>
+	  			</div>
+    			<div class="column" style="width: 20%">
+					<center><img class="img-fluid" src="{{f:42399702}}" alt="image of paloma gonzález" width="100%" height="100%" /></center>
+					<h3 style="margin-top: 0;">Paloma<br />González</h3>
+					<p class="directory">Student Services<br />Data Coordinator<br /><span class="room-number">MDA 119</span></p>
+	  			</div>
+  			</div>
+		</div>
+		<div class="column" style="width: 100%">
+  			<div class="row">                                 <!-- ** Row 5/11 ** -->
+    			<div class="column" style="width: 20%">
+					<center><img class="img-fluid" src="{{f:59258077}}" alt="image of simon holoweiko" width="100%" height="100%" /></center>
+					<h3 style="margin-top: 0;">Simon<br />Holoweiko</h3>
+					<p class="directory">Associate Director of Bands<br />Director of Tiger Band<br /><span class="room-number">BND 297</span></p>
+	  			</div>
+				<div class="column" style="width: 20%">
+					<center><img class="img-fluid" src="{{f:51550252}}" alt="image of jason jamerson" width="100%" height="100%" /></center>
+					<h3 style="margin-top: 0;">Jason<br />Jamerson</h3>
+					<p class="directory">Assistant Professor<br />Virtual Production<br /><span class="room-number">MDA 378</span></p>
+	  			</div>
+				<div class="column" style="width: 20%">
+					<center><img class="img-fluid" src="{{f:51573656}}" alt="image of blake howe" width="100%" height="100%" /></center>
+					<h3 style="margin-top: 0;">Blake<br />Howe</h3>
+					<p class="directory">Professor<br />Musicology<br /><span class="room-number">MDA 297</span></p>
+	  			</div>
+				<div class="column" style="width: 20%">
+					<center><img class="img-fluid" src="{{f:42648836}}" alt="image of george judy" width="100%" height="100%" /></center>
+					<h3 style="margin-top: 0;">George<br />Judy</h3>
+					<p class="directory">Professor<br />Acting &amp; Directing<br /><span class="room-number">MDA 391</span></p>
+	  			</div>
+    			<div class="column" style="width: 20%">
+					<center><img class="img-fluid" src="{{f:42648861}}" alt="image of kyla kazushyk" width="100%" height="100%" /></center>
+					<h3 style="margin-top: 0;">Kayla<br />Kazushyk</h3>
+					<p class="directory">Associate Professor<br />Costume Technology<br /><span class="room-number">MDA 173</span></p>
+	  			</div>
+  			</div>
+		</div>
+		<div class="column" style="width: 100%">
+  			<div class="row">                                 <!-- ** Row 6/11  ** -->
+    			<div class="column" style="width: 20%">
+					<center><img class="img-fluid" src="{{f:51553179}}" alt="image of tyler keiffer" width="100%" height="100%" /></center>
+					<h3 style="margin-top: 0;">Tyler<br />Kieffer</h3>
+					<p class="directory">Assistant Professor<br />Sound Design<br /><span class="room-number">MDA 313</span></p>
+	  			</div>
+    			<div class="column" style="width: 20%">
+					<center><img class="img-fluid" src="{{f:51578372}}" alt="image of warren kimball" width="100%" height="100%" /></center>
+					<h3 style="margin-top: 0;">Warren<br />Kimball</h3>
+					<p class="directory">Instructor<br />Music Education<br /><span class="room-number">MDA 275</span></p>
+	  			</div>
+				<div class="column" style="width: 20%">
+					<center><img class="img-fluid" src="{{f:59037871}}" alt="image of susannah knoll" width="100%" height="100%" /></center>
+					<h3 style="margin-top: 0;">Susannah<br />Knoll</h3>
+					<p class="directory">Executive Assistant<br />HR Analyst<br /><span class="room-number">MDA 191</span></p>
+	  			</div>
+				<div class="column" style="width: 20%">
+					<center><img class="img-fluid" src="{{f:59042450}}" alt="image of eric lau" width="100%" height="100%" /></center>
+					<h3 style="margin-top: 0;">Eric<br />Lau</h3>
+					<p class="directory">Dean<br />CMDA<br /><span class="room-number">MDA 191</span></p>
+	  			</div>
+				<div class="column" style="width: 20%">
+					<center><img class="img-fluid" src="{{f:59258080}}" alt="image of weston lewis" width="100%" height="100%" /></center>
+					<h3 style="margin-top: 0;">Weston<br />Lewis</h3>
+					<p class="directory">Assistant Director of Bands<br />Instructor<br /><span class="room-number">BND 296</span></p>
+	  			</div>
+  			</div>
+		</div>
+		<div class="column" style="width: 100%">
+			  <div class="row">                                 <!-- ** Row 7/11  ** -->
+				<div class="column" style="width: 20%">
+					<center><img class="img-fluid" src="{{f:59272419}}" alt="image of olivia lucas" width="100%" height="100%" /></center>
+					<h3 style="margin-top: 0;">Olivia<br />Lucas</h3>
+					<p class="directory">Assistant Professor<br />Music Theory<br /><span class="room-number">MDA 274</span></p>
+				  </div>
+				<div class="column" style="width: 20%">
+					<center><img class="img-fluid" src="{{f:59747700}}" alt="image of smaida mãra massatt" width="100%" height="100%" /></center>
+					<h3 style="margin-top: 0;">Smaida Mãra<br />Massatt</h3>
+					<p class="directory">Assistant Professor<br />Lighting<br /><span class="room-number">MDA 378</span></p>
+				  </div>
+				<div class="column" style="width: 20%">
+					<center><img class="img-fluid" src="{{f:51552443}}" alt="image of dugg mcdonough" width="100%" height="100%" /></center>
+					<h3 style="margin-top: 0;">Dugg<br />McDonough</h3>
+					<p class="directory">Associate Professor<br />Director of Opera<br /><span class="room-number">MDA 228</span></p>
+				  </div>
+				<div class="column" style="width: 20%">
+					<center><img class="img-fluid" src="{{f:42458340}}" alt="image of allison mcfarland" width="100%" height="100%" /></center>
+					<h3 style="margin-top: 0;">Alison<br />McFarland</h3>
+					<p class="directory">Associate Professor<br />Musicology<br /><span class="room-number">MDA 285</span></p>
+				  </div>
+				<div class="column" style="width: 20%">
+					<center><img class="img-fluid" src="{{f:42648853}}" alt="image of james murphy" width="100%" height="100%" /></center>
+					<h3 style="margin-top: 0;">James<br />Murphy</h3>
+					<p class="directory">Professor<br />Technology &amp; Design<br /><span class="room-number">MDA 375</span></p>
+				  </div>
+			  </div>
+		</div>
+		<div class="column" style="width: 100%">
+  			<div class="row">                                 <!-- ** Row 8/11  ** -->
+				<div class="column" style="width: 20%">
+					<center><img class="img-fluid" src="{{f:42500280}}" alt="image of robert peck" width="100%" height="100%" /></center>
+					<h3 style="margin-top: 0;">Robert<br />Peck</h3>
+					<p class="directory">Professor<br />Music Theory<br /><span class="room-number">MDA 281</span></p>
+	  			</div>
+    			<div class="column" style="width: 20%">
+					<center><img class="img-fluid" src="{{f:51551882}}" alt="image of jeffrey perry" width="100%" height="100%" /></center>
+					<h3 style="margin-top: 0;">Jeffrey<br />Perry</h3>
+					<p class="directory">Professor<br />Music Theory<br /><span class="room-number">MDA 277</span></p>
+	  			</div>
+    			<div class="column" style="width: 20%">
+					<center><img class="img-fluid" src="{{f:44928569}}" alt="image of pamela pike" width="100%" height="100%" /></center>
+					<h3 style="margin-top: 0;">Pamela<br />Pike</h3>
+					<p class="directory">Professor<br />Piano Pedagogy<br /><span class="room-number">MDA 291</span></p>
+	  			</div>
+    			<div class="column" style="width: 20%">
+					<center><img class="img-fluid" src="{{f:42399915}}" alt="image of christopher reed" width="100%" height="100%" /></center>
+					<h3 style="margin-top: 0;">Christopher<br />Reed</h3>
+					<p class="directory">Mental Health<br />Consultant<br /><span class="room-number">MDA 317</span></p>
+	  			</div>
+				<div class="column" style="width: 20%">
+					<center><img class="img-fluid" src="{{f:42648847}}" alt="image of claudio ribeiro" width="100%" height="100%" /></center>
+					<h3 style="margin-top: 0;">Claudio<br />Ribeiro</h3>
+					<p class="directory">Professional-in-Residence<br />Dance<br /><span class="room-number">MDA 315</span></p>
+	  			</div>
+  			</div>
+		</div>
+		<div class="column" style="width: 100%">
+			  <div class="row">                                 <!-- ** Row 9/11  ** -->
+				<div class="column" style="width: 20%">
+					<center><img class="img-fluid" src="{{f:48149750}}" alt="image of david saccardi" width="100%" height="100%" /></center>
+					<h3 style="margin-top: 0;">David<br />Saccardi</h3>
+					<p class="directory">Assistant Professor<br />Music Education<br /><span class="room-number">MDA 257</span></p>
+				  </div>
+				<div class="column" style="width: 20%">
+					<center><img class="img-fluid" src="{{f:42648842}}" alt="image of rocky sansom" width="100%" height="100%" /></center>
+					<h3 style="margin-top: 0;">Rocky<br />Sansom</h3>
+					<p class="directory">Assistant Professor<br />Voice<br /><span class="room-number">MDA 382</span></p>
+				  </div>
+				<div class="column" style="width: 20%">
+					<center><img class="img-fluid" src="{{f:42648835}}" alt="image of alan sikes" width="100%" height="100%" /></center>
+					<h3 style="margin-top: 0;">Alan<br />Sikes</h3>
+					<p class="directory">Associate Professor<br />Theatre History<br /><span class="room-number">MDA 319</span></p>
+				  </div>
+				<div class="column" style="width: 20%">
+					<center><img class="img-fluid" src="{{f:42667568}}" alt="image of kristin sosnowsky" width="100%" height="100%" /></center>
+					<h3 style="margin-top: 0;">Kristin<br />Sosnowsky</h3>
+					<p class="directory">Executive Associate Dean<br />Director, School of Theatre<br /><span class="room-number">MDA 105</span></p>
+				  </div>
+				<div class="column" style="width: 20%">
+					<center><img class="img-fluid" src="{{f:45209249}}" alt="image of vastine stabler" width="100%" height="100%" /></center>
+					<h3 style="margin-top: 0;">Vastine<br />Stabler</h3>
+					<p class="directory">Managing Artistic Director<br />Swine Palace<br /><span class="room-number">MDA 105</span></p>
+	  			</div>
+			  </div>
+		</div>
+		<div class="column" style="width: 100%">
+  			<div class="row">                                 <!-- ** Row 10/11  ** -->
+				<div class="column" style="width: 20%">
+					<center><img class="img-fluid" src="{{f:59258070}}" alt="image of damon talley" width="100%" height="100%" /></center>
+					<h3 style="margin-top: 0;">Damon<br />Talley</h3>
+					<p class="directory">Director of Bands<br />Professor of Conducting<br /><span class="room-number">BND 298</span></p>
+	  			</div>
+				<div class="column" style="width: 20%">
+					<center><img class="img-fluid" src="{{f:56936096}}" alt="image of christopher trapani" width="100%" height="100%" /></center>
+					<h3 style="margin-top: 0;">Christopher<br />Trapani</h3>
+					<p class="directory">Assistant Professor<br />EMDM<br /><span class="room-number">MDA 255</span></p>
+	  			</div>
+				<div class="column" style="width: 20%">
+					<center><img class="img-fluid" src="{{f:59747704}}" alt="image of vanessa uhlig" width="100%" height="100%" /></center>
+					<h3 style="margin-top: 0;">Vanessa<br />Uhlig</h3>
+					<p class="directory">Visiting Assistant Professor<br />Film &amp; Television<br /><span class="room-number">MDA 362</span></p>
+	  			</div>
+				<div class="column" style="width: 20%">
+					<center><img class="img-fluid" src="{{f:51909591}}" alt="image of becca wagner" width="100%" height="100%" /></center>
+					<h3 style="margin-top: 0;">Becca<br />Wagner</h3>
+					<p class="directory">Recruiter<br />Theatre<br /><span class="room-number">MDA 119</span></p>
+	  			</div>
+				<div class="column" style="width: 20%">
+					<center><img class="img-fluid" src="{{f:43296791}}" alt="image of shannon walsh" width="100%" height="100%" /></center>
+					<h3 style="margin-top: 0;">Shannon<br />Walsh</h3>
+					<p class="directory">Associate Professor<br />Theatre History<br /><span class="room-number">MDA 323</span></p>
+	  			</div>
+  			</div>
+		</div>
+		<div class="column" style="width: 100%">
+  			<div class="row">                                 <!-- ** Row 11/11  ** -->
+				<div class="column" style="width: 20%">
+					<center><img class="img-fluid" src="{{f:59747706}}" alt="image of apollo weaver" width="100%" height="100%" /></center>
+					<h3 style="margin-top: 0;">Apollo<br />Weaver</h3>
+					<p class="directory">Assistant Professor<br />Theatre Design<br /><span class="room-number">MDA 377</span></p>
+	  			</div>
+				<div class="column" style="width: 20%">
+					<center><img class="img-fluid" src="{{f:42458355}}" alt="image of gabriela werries" width="100%" height="100%" /></center>
+					<h3 style="margin-top: 0;">Gabriela<br />Werries</h3>
+					<p class="directory">Instructor<br />Harp<br /><span class="room-number">MDA 114</span></p>
+	  			</div>
+				<div class="column" style="width: 20%">
+					<center><img class="img-fluid" src="{{f:42648852}}" alt="image of chris wood" width="100%" height="100%" /></center>
+					<h3 style="margin-top: 0;">Chris<br />Wood</h3>
+					<p class="directory">Professional-in-Residence<br />Scene Shop Manager<br /><span class="room-number">MDA 155</span></p>
+	  			</div>
+    			<div class="column" style="width: 20%">
+					<p class="directory">&nbsp;</p>
+	  			</div>
+    			<div class="column" style="width: 20%">
+					<p class="directory">&nbsp;</p>
+	  			</div>
+  			</div>
+		</div>	
+        </div>
+        <div id="Contact" class="tab-info" style="background-color: #ffffff">
+			<div id="contactInfoAccordion">
+				<h2>Contact Information</h2>
+				<div class="row">
+					<div class="column" style="width: 25%">
+						<p class="lead">Phone Numbers</p>
+						<p><strong>School of Music Office</strong><br />225-578-3261</p>
+						<p><strong>School of Theatre Office</strong><br />225-578-4174</p>
+						<p><strong>Department of Bands Office</strong><br />225-578-2384</p>
+						<p><strong>College Dean's Office</strong><br />225-578-9959</p>
+					</div>
+					<div class="column" style="width: 25%">
+						<p class="lead">Box Offices</p>
+						<p><strong>College Box Office</strong><br />225-578-3527<br />cmdaboxoffice@lsu.edu</p>
+						<p><strong>Union Theater Box Office</strong><br />225-578-5128<br />unionbox@lsu.edu</p>
+					</div>
+					<div class="column" style="width: 25%">
+						<p class="lead">Admissions Contacts</p>
+						<p><strong>Music – All Programs</strong><br />musicadmissions@lsu.edu</p>
+						<p><strong>Theatre – Film &amp; Television Program</strong><br />FilmTVAdmission@lsu.edu</p>
+						<p><strong>Theatre – Theatre Program</strong><br />TheatreAdmission@lsu.edu</p>
+					</div>
+					<div class="column" style="width: 25%">
+						<p class="lead">Mailing Addresses</p>
+						<p><strong>School of Music</strong><br />102 School of Music Building<br />Louisiana State University<br />Baton Rouge, LA 70803</p>
+						<p><strong>School of Theatre</strong><br />105 Music &amp; Dramatic Arts Building<br />Louisiana State University<br />Baton Rouge, LA 70803</p>
+						<p><strong>Department of Bands</strong><br />292 Band Hall<br />Louisiana State University<br />Baton Rouge, LA 70803</p>
+					</div>
+				</div>
+				<button class="accordion">Administrators</button>
+					<div class="panel">
+				    <table>
+        				<tr>
+            				<th>Name</th>
+            				<th>Title</th>
+            				<th>Email</th>
+        				</tr>
+        				<tr>
+							<td><strong>Eric Lau</strong></td>
+            				<td>Dean, College of Music &amp; Dramatic Arts</td>
+            				<td>cmdadeansoffice@lsu.edu</td>
+        				</tr>
+        				<tr>
+							<td><strong>Kristin Sosnowsky</strong></td>
+            				<td>Director, School of Theatre, Executive Associate Dean</td>
+            				<td>ksosno1@lsu.edu</td>
+        				</tr>
+        				<tr>
+							<td><strong>James Byo</strong></td>
+            				<td>Director, School of Music</td>
+            				<td>jbyo@lsu.edu</td>
+        				</tr>
+    				</table>
+					</div>
+				<button class="accordion">Staff</button>
+					<div class="panel">
+				    <table>
+        				<tr>
+            				<th>Name</th>
+            				<th>Title</th>
+            				<th>Email</th>
+        				</tr>
+        				<tr>
+							<td><strong>Rachel Aker</strong></td>
+            				<td>Career Coach, College of Music &amp; Dramatic Arts</td>
+            				<td>raker1@lsu.edu</td>
+        				</tr>
+        				<tr>
+							<td><strong>Drew Alvarez</strong></td>
+            				<td>Front Office Coordinator, School of Theatre</td>
+            				<td>drewalvarez@lsu.edu</td>
+        				</tr>
+						<tr>
+							<td><strong>Jason Bowers</strong></td>
+            				<td>Assistant Director, School of Music</td>
+            				<td>jbowe17@lsu.edu</td>
+        				</tr>
+						<tr>
+							<td><strong>Maddie Brown</strong></td>
+            				<td>Director of Development, College Lead, LSU Foundation</td>
+            				<td>mbrown@lsufoundation.org</td>
+        				</tr>
+						<tr>
+							<td><strong>Leonce Clement</strong></td>
+            				<td>Creative Coordinator, College of Music &amp; Dramatic Arts</td>
+            				<td>lclement1@lsu.edu</td>
+        				</tr>
+						<tr>
+							<td><strong>Trey Davis</strong></td>
+            				<td>Interim Associate Dean of Graduate Studies, College of Music &amp; Dramatic Arts</td>
+            				<td>cmdagradstudies@lsu.edu</td>
+        				</tr>
+						<tr>
+							<td><strong>Kara Duplantier</strong></td>
+            				<td>Business Manager, Department of Bands</td>
+            				<td>karadup@lsu.edu</td>
+        				</tr>
+						<tr>
+							<td><strong>Melissa Fay</strong></td>
+            				<td>Business Manager, School of Theatre</td>
+            				<td>mfay@lsu.edu</td>
+        				</tr>
+						<tr>
+							<td><strong>Paloma Gonzalez</strong></td>
+            				<td>Student Services Data Coordinator, College of Music &amp; Dramatic Arts</td>
+            				<td>paloma@lsu.edu</td>
+        				</tr>
+						<tr>
+							<td><strong>Zachary Hazelwood</strong></td>
+            				<td>Director of Operations, Events Manager, College of Music &amp; Dramatic Arts</td>
+            				<td>zhazel1@lsu.edu</td>
+        				</tr>
+						<tr>
+							<td><strong>William Kelley</strong></td>
+            				<td>Audio Engineer, School of Music</td>
+            				<td>wdkelley@lsu.edu</td>
+        				</tr>
+						<tr>
+							<td><strong>Susannah Knoll</strong></td>
+            				<td>Executive Assistant to the Dean, HR Analyst, , College of Music &amp; Dramatic Arts</td>
+            				<td>smonta1@lsu.edu</td>
+        				</tr>
+						<tr>
+							<td><strong>Nathaniel Malkow</strong></td>
+            				<td>Student Success and Recruiting Coordinator, School of Music</td>
+            				<td>nmalko1@lsu.edu</td>
+        				</tr>
+						<tr>
+							<td><strong>Pamela Pike</strong></td>
+            				<td>Associate Dean of Research, Creative Practice &amp; Community Engagement</td>
+            				<td>pdpike@lsu.edu</td>
+        				</tr>
+						<tr>
+							<td><strong>Kaitlin Richard	</strong></td>
+            				<td>Assistant to the Director, Office Coordinator, School of Music</td>
+            				<td>krichard1@lsu.edu</td>
+        				</tr>
+						<tr>
+							<td><strong>Joe Rush</strong></td>
+            				<td>Piano Technician, School of Music</td>
+            				<td>jrush10@lsu.edu</td>
+        				</tr>
+						<tr>
+							<td><strong>Amy Smith</strong></td>
+            				<td>Assistant Dean of Student Success, College of Music &amp; Dramatic Arts</td>
+            				<td>asmith10@lsu.edu</td>
+        				</tr>
+						<tr>
+							<td><strong>Vastine Stabler</strong></td>
+            				<td>Managing Artistic Director, Swine Palace</td>
+            				<td>stabler1@lsu.edu</td>
+        				</tr>
+						<tr>
+							<td><strong>Rebecca Wagner</strong></td>
+            				<td>Student Success and Recruiting Coordinator, School of Theatre</td>
+            				<td>rwagner1@lsu.edu</td>
+        				</tr>
+						<tr>
+							<td><strong>Shannon Walsh</strong></td>
+            				<td>Associate Dean of Access &amp; Inclusion, College of Music &amp; Dramatic Arts</td>
+            				<td>swalsh@lsu.edu</td>
+        				</tr>
+						<tr>
+							<td><strong>Hayley Westphal</strong></td>
+            				<td>Director of Development, LSU Foundation	</td>
+            				<td>hwestphal@lsufoundation.org</td>
+        				</tr>
+    				</table>
+					</div>
+				<button class="accordion">School of Music</button>
+					<div class="panel">
+				    <table>
+        				<tr>
+            				<th>Name</th>
+            				<th>Title</th>
+            				<th>Email</th>
+        				</tr>
+        				<tr>
+							<td><strong>Ross Ahlhorn</strong></td>
+            				<td>Assistant Professor, Trumpet</td>
+            				<td>---</td>
+        				</tr>
+        				<tr>
+							<td><strong>James Byo</strong></td>
+            				<td>Director of the School of Music, Carl Prince Matthies Memorial Professor, Music Education</td>
+            				<td>jbyo@lsu.edu</td>
+        				</tr>
+        				<tr>
+							<td><strong>Jesse Allison</strong></td>
+            				<td>Associate Professor, Experimental Music &amp; Digital Media</td>
+            				<td>jtallison@lsu.ed </td>
+        				</tr>
+        				<tr>
+							<td><strong>Inessa Bazayev</strong></td>
+            				<td>Manship Associate Professor, Music Theory</td>
+            				<td>ibazayev@lsu.edu</td>
+        				</tr>
+        				<tr>
+							<td><strong>Stephen David Beck</strong></td>
+            				<td>Derryl &amp; Helen Haymon Professor, Composition &amp; Electro-Acoustic Music</td>
+            				<td>sdbeck@lsu.edu</td>
+        				</tr>
+        				<tr>
+							<td><strong>Nanci Belmont</strong></td>
+            				<td>Assistant Professor, Bassoon</td>
+            				<td>nbelmont@lsu.edu</td>
+        				</tr>
+        				<tr>
+							<td><strong>John Bishop</strong></td>
+							<td>Instructor, Guitar &amp; Jazz</td>
+            				<td>johnbishop1@lsu.edu</td>
+        				</tr>
+        				<tr>
+							<td><strong>Michael Borowitz</strong></td>
+            				<td>Associate Professor, Opera</td>
+            				<td>mborowitz@lsu.edu</td>
+        				</tr>
+        				<tr>
+							<td><strong>Brett Boutwell</strong></td>
+            				<td>William F. Swor Alumni Associate Professor, Musicology</td>
+            				<td>boutwell@lsu.edu</td>
+        				</tr>
+        				<tr>
+							<td><strong>Jason Bowers</strong></td>
+            				<td>Instructor, Music Education	</td>
+            				<td>jbowe17@lsu.edu</td>
+        				</tr>
+        				<tr>
+							<td><strong>Lindsay Kate Brown</strong></td>
+            				<td>Assistant Professor, Voice</td>
+            				<td>lindsaykatebrown@lsu.edu</td>
+        				</tr>
+        				<tr>
+							<td><strong>Jane Cassidy</strong></td>
+            				<td>Roy &amp; Margaret Gianelloni Alumni Professor, Music Education</td>
+            				<td>jcassid@lsu.edu</td>
+        				</tr>
+        				<tr>
+							<td><strong>Trey Davis</strong></td>
+            				<td>Stephanie Landry Barineau Associate Professor, Associate Director of Choral Studies</td>
+            				<td>treydavis@lsu.edu</td>
+        				</tr>
+        				<tr>
+							<td><strong>Willis Delony</strong></td>
+            				<td>LSU Boyd Professor, Piano and Jazz Studies</td>
+            				<td>wdelony@lsu.edu</td>
+        				</tr>
+        				<tr>
+							<td><strong>Brett Dietz</strong></td>
+            				<td>Mattax Professor, Percussion</td>
+            				<td>bdietz1@lsu.edu</td>
+        				</tr>
+        				<tr>
+							<td><strong>David Dockan</strong></td>
+            				<td>Assistant Professor, Music Education</td>
+            				<td>	daviddockan@lsu.edu </td>
+        				</tr>
+        				<tr>
+							<td><strong>Kamile Geist</strong></td>
+            				<td>Associate Professor, Music Therapy</td>
+            				<td>kgeist@lsu.edu</td>
+        				</tr>
+        				<tr>
+							<td><strong>Mara Gibson</strong></td>
+            				<td>Associate Professor, Composition</td>
+            				<td>mgibson1@lsu.edu</td>
+        				</tr>
+        				<tr>
+							<td><strong>Andreas Giger</strong></td>
+            				<td>Louise &amp; Kenneth L. Kinney Professor of Opera &amp; Musicology</td>
+            				<td>agiger1@lsu.edu</td>
+        				</tr>
+        				<tr>
+							<td><strong>Charles Goodman</strong></td>
+            				<td>Assistant Professor, Tuba &amp; Euphonium</td>
+            				<td>goodman1@lsu.edu</td>
+        				</tr>
+        				<tr>
+							<td><strong>Robert Grayson</strong></td>
+            				<td>Edith K. Kirkpatrick Distinguished Professor Emeritus, Voice</td>
+            				<td>rgrayson@lsu.edu</td>
+        				</tr>
+        				<tr>
+							<td><strong>Paul Groves</strong></td>
+            				<td>Artist-in-Residence, Voice</td>
+            				<td>---</td>
+        				</tr>
+        				<tr>
+							<td><strong>Michael Gurt</strong></td>
+            				<td>Paula G. Manship Distinguished Professor, Piano</td>
+            				<td>mugurt@lsu.edu</td>
+        				</tr>
+        				<tr>
+							<td><strong>Faith Hall</strong></td>
+            				<td>Assistant Professor, Music Education</td>
+            				<td>fahall@lsu.edu</td>
+        				</tr>
+        				<tr>
+							<td><strong>Lin He</strong></td>
+            				<td>Associate Professor, Violin</td>
+            				<td>linhe@lsu.edu</td>
+        				</tr>
+        				<tr>
+							<td><strong>Laurence Hebert</strong></td>
+            				<td>Director, LSU Gospel Choir</td>
+            				<td>laurencehebert@lsu.edu</td>
+        				</tr>
+        				<tr>
+							<td><strong>Brandon Hendrickson</strong></td>
+            				<td>Assistant Professor, Voice</td>
+            				<td>bhendrickson1@lsu.edu</td>
+        				</tr>
+        				<tr>
+							<td><strong>Simon Holoweiko</strong></td>
+            				<td>Assistant Professor, Associate Director of Bands</td>
+            				<td>sholow1@lsu.edu</td>
+        				</tr>
+        				<tr>
+							<td><strong>Blake Howe</strong></td>
+            				<td>Manship Professor, Musicology</td>
+            				<td>bhowe@lsu.edu</td>
+        				</tr>
+        				<tr>
+							<td><strong>Dennis Jesse</strong></td>
+            				<td>Galante Family Associate Professor, Voice</td>
+            				<td>djesse@lsu.edu</td>
+        				</tr>
+        				<tr>
+							<td><strong>Cecilia Kang</strong></td>
+            				<td>Associate Professor, Clarinet</td>
+            				<td>kang1@lsu.edu</td>
+        				</tr>
+        				<tr>
+							<td><strong>Katherine Kemler</strong></td>
+            				<td>Charles &amp; Mary Barre Alumni Professor, Flute</td>
+            				<td>kkemler@lsu.edu</td>
+        				</tr>
+        				<tr>
+							<td><strong>Warren Kimball</strong></td>
+            				<td>Instructor, Academic Studies</td>
+            				<td>wkimba1@lsu.edu</td>
+        				</tr>
+        				<tr>
+							<td><strong>Elena Lacheva</strong></td>
+            				<td>Professional-in-Residence, Collaborative Piano</td>
+            				<td>elacheva1@lsu.edu</td>
+        				</tr>
+        				<tr>
+							<td><strong>Weston Lewis</strong></td>
+            				<td>Instructor, Visiting Assistant Director of Bands</td>
+            				<td>wslewis@lsu.edu</td>
+        				</tr>
+        				<tr>
+							<td><strong>Espen Lilleslåtten</strong></td>
+            				<td>Associate Professor, Violin</td>
+            				<td>espen@lsu.edu</td>
+        				</tr>
+        				<tr>
+							<td><strong>Olivia Lucas</strong></td>
+            				<td>Assistant Professor, Music Theory</td>
+            				<td>olivialucas1@lsu.edu</td>
+        				</tr>
+        				<tr>
+							<td><strong>James "Dugg" McDonough</strong></td>
+            				<td>Mary Barrett Fruehan Associate Professor, Opera</td>
+            				<td>mcdugg@lsu.edu</td>
+        				</tr>
+        				<tr>
+							<td><strong>Alison McFarland</strong></td>
+            				<td>Associate Professor, Musicology</td>
+            				<td>amcfar@lsu.edu</td>
+        				</tr>
+        				<tr>
+							<td><strong>Sandra Moon</strong></td>
+            				<td>Associate Professor, Voice</td>
+            				<td>sandramoon@lsu.edu</td>
+        				</tr>
+        				<tr>
+							<td><strong>Brian Nabors</strong></td>
+            				<td>Assistant Professor, Composition</td>
+            				<td>bnabors1@lsu.edu</td>
+        				</tr>
+        				<tr>
+							<td><strong>Ana María Otamendi</strong></td>
+            				<td>Janice &amp; Gerald Pellar Professor, Collaborative Piano</td>
+            				<td>otamendi1@lsu.edu</td>
+        				</tr>
+        				<tr>
+							<td><strong>Andrew W. Parker</strong></td>
+            				<td>Associate Professor, Oboe</td>
+            				<td>awparker@lsu.edu</td>
+        				</tr>
+        				<tr>
+							<td><strong>Dennis Parker</strong></td>
+            				<td>Derryl &amp; Helen Haymon Professor, Cello</td>
+            				<td>dparke5@lsu.edu</td>
+        				</tr>
+        				<tr>
+							<td><strong>Terry Patrick-Harris</strong></td>
+            				<td>Professional-in-Residence, Voice</td>
+            				<td>tharr11@lsu.edu</td>
+        				</tr>
+        				<tr>
+							<td><strong>Robert Peck</strong></td>
+            				<td>Professor, Music Theory</td>
+            				<td>rpeck@lsu.edu</td>
+        				</tr>
+        				<tr>
+							<td><strong>Jeffrey Perry</strong></td>
+            				<td>Paula G. Manship Professor, Music Theory</td>
+            				<td>jperry@lsu.edu</td>
+        				</tr>
+        				<tr>
+							<td><strong>Pamela Pike</strong></td>
+            				<td>Herndon Spillman Professor, Piano Pedagogy</td>
+            				<td>pdpike@lsu.edu</td>
+        				</tr>
+        				<tr>
+							<td><strong>Molly Redfield</strong></td>
+            				<td>Assistant Professor, Jazz Studies</td>
+            				<td>mredfield@lsu.edu</td>
+        				</tr>
+        				<tr>
+							<td><strong>Alissa Rowe</strong></td>
+            				<td>Associate Professor, Galante Director of Choral Studies</td>
+            				<td>alissarowe@lsu.edu</td>
+        				</tr>
+        				<tr>
+							<td><strong>David Saccardi</strong></td>
+            				<td>Assistant Professor, Music Education</td>
+            				<td>dsaccardi@lsu.edu</td>
+        				</tr>
+        				<tr>
+							<td><strong>Loraine Sims</strong></td>
+            				<td>Edith Killgore Kirkpatrick Professor, Voice</td>
+            				<td>lsims@lsu.edu</td>
+        				</tr>
+        				<tr>
+							<td><strong>D. J. Sparr</strong></td>
+            				<td>Visiting Instructor, Composition</td>
+            				<td>dsparr2@lsu.edu</td>
+        				</tr>
+        				<tr>
+							<td><strong>Kimberly Sparr</strong></td>
+            				<td>Associate Professor, Viola</td>
+            				<td>ksparr1@lsu.edu</td>
+        				</tr>
+        				<tr>
+							<td><strong>Doug Stone</strong></td>
+            				<td>Associate Professor, Jazz Studies</td>
+            				<td>---</td>
+        				</tr>
+        				<tr>
+							<td><strong>Damon Talley</strong></td>
+            				<td>Professor, Manship Director of Bands</td>
+            				<td>dougstone1@lsu.edu</td>
+        				</tr>
+        				<tr>
+							<td><strong>Scott Terrell</strong></td>
+            				<td>Associate Professor, Martin Howard Director of Orchestral Studies</td>
+            				<td>sterrell@lsu.edu</td>
+        				</tr>
+        				<tr>
+							<td><strong>Christopher Trapani</strong></td>
+            				<td>Assistant Professor, Experimental Music &amp; Digital Media</td>
+            				<td>ctrapani@lsu.edu</td>
+        				</tr>
+        				<tr>
+							<td><strong>Yung-chiao Wei</strong></td>
+            				<td>Professor, Double Bass</td>
+            				<td>ywei1@lsu.edu</td>
+        				</tr>
+        				<tr>
+							<td><strong>Gabriella Werries</strong></td>
+            				<td>Instructor, Harp</td>
+            				<td>gchiha1@lsu.edu</td>
+        				</tr>
+        				<tr>
+							<td><strong>Kendra Wheeler</strong></td>
+            				<td>Assistant Professor, Saxophone</td>
+            				<td>kwheeler@lsu.edu</td>
+        				</tr>
+    				</table>
+					</div>
+				<button class="accordion">School of Theatre</button>
+					<div class="panel">
+				    <table>
+        				<tr>
+            				<th>Name</th>
+            				<th>Title</th>
+            				<th>Email</th>
+        				</tr>
+        				<tr>
+							<td><strong>Kristin Sosnowsky</strong></td>
+            				<td>Executive Associate Dean, College of Music &amp; Dramatic Arts, Professor of Arts Administration</td>
+            				<td>ksosno1@lsu.edu</td>
+        				</tr>
+        				<tr>
+							<td><strong>Drew Alvarez</strong></td>
+            				<td>Office Coordinator</td>
+            				<td>drewalvarez@lsu.edu</td>
+        				</tr>
+        				<tr>
+							<td><strong>Jeremy Bernardoni</strong></td>
+            				<td>Assistant Professor of Costume Design</td>
+            				<td>jbarnardoni1@lsu.edu</td>
+        				</tr>
+        				<tr>
+							<td><strong>Suzanne Chambliss</strong></td>
+            				<td>Adjunct, Costume &amp; Design</td>
+            				<td>---</td>
+        				</tr>
+        				<tr>
+							<td><strong>Sonya Cooke	</strong></td>
+            				<td>Assistant Professor of Acting</td>
+            				<td>cooke1@lsu.edu</td>
+        				</tr>
+        				<tr>
+							<td><strong>Brett Duggan</strong></td>
+            				<td>Adjunct, Theatre</td>
+            				<td>---</td>
+        				</tr>
+        				<tr>
+							<td><strong>John Michael Eddy</strong></td>
+            				<td>Professional-In-Residence, Props Maste	</td>
+            				<td>jeddy2@lsu.edu</td>
+        				</tr>
+        				<tr>
+							<td><strong>Nick Erickson</strong></td>
+            				<td>Associate Professor of Stage Movement</td>
+            				<td>nickwe@lsu.edu</td>
+        				</tr>
+        				<tr>
+							<td><strong>Femi Euba</strong></td>
+            				<td>Professor of Black Drama &amp; Playwriting, Louise and Kenneth Kinney Professor</td>
+            				<td>theuba@lsu.edu</td>
+        				</tr>
+        				<tr>
+							<td><strong>John Fletcher</strong></td>
+            				<td>Associate Professor of Theatre History, Billy J. Harbin Professor</td>
+            				<td>jfletch@lsu.edu</td>
+        				</tr>
+        				<tr>
+							<td><strong>George Judy</strong></td>
+            				<td>Professor of Acting and Directing, Gresdna A. Doty Professor</td>
+            				<td>gjudy@lsu.edu</td>
+        				</tr>
+        				<tr>
+							<td><strong>Kyla Kazuschyk</strong></td>
+            				<td>Associate Professor of Costume Technology</td>
+            				<td>kkazuschyk@lsu.edu</td>
+        				</tr>
+        				<tr>
+							<td><strong>Vince LiCata</strong></td>
+            				<td>Adjunct Professor</td>
+            				<td>licata@lsu.edu</td>
+        				</tr>
+        				<tr>
+							<td><strong>Smaida Massatt</strong></td>
+            				<td>Assistant Professor, Entertainment Lighting &amp; Media Production</td>
+            				<td>smaidamassatt@lsu.edu</td>
+        				</tr>
+        				<tr>
+							<td><strong>James L. Murphy</strong></td>
+            				<td>Professor of Theatre Technology, Technical Director, and Production Manager</td>
+            				<td>jlmurphy@lsu.edu</td>
+        				</tr>
+        				<tr>
+							<td><strong>Elizabeth Parquet</strong></td>
+            				<td>Adjunct, Theatre</td>
+            				<td>---</td>
+        				</tr>
+        				<tr>
+							<td><strong>Katie Pryor</strong></td>
+            				<td>Adjunct, Film &amp; Television</td>
+            				<td>katie@filmbatonrouge.com</td>
+        				</tr>
+        				<tr>
+							<td><strong>Claudio Ribeiro</strong></td>
+            				<td>Professional-in-Residence, Co-Head of Dance</td>
+            				<td>cribeiro1@lsu.edu</td>
+        				</tr>
+        				<tr>
+							<td><strong>Rockford Sansom</strong></td>
+            				<td>Assistant Professor of Voice</td>
+            				<td>rocky1@lsu.edu</td>
+        				</tr>
+        				<tr>
+							<td><strong>Alan Sikes</strong></td>
+            				<td>Associate Professor of Theatre History</td>
+            				<td>asikes@lsu.edu</td>
+        				</tr>
+        				<tr>
+							<td><strong>Chris Stelly</strong></td>
+            				<td>Adjunct, Film &amp; Television</td>
+            				<td>---</td>
+        				</tr>
+        				<tr>
+							<td><strong>Vanessa Uhlig</strong></td>
+            				<td>Visiting Professor, Film and Television</td>
+            				<td>vuhlig@lsu.edu</td>
+        				</tr>
+        				<tr>
+							<td><strong>Shannon Walsh</strong></td>
+            				<td>Associate Professor of Theatre History</td>
+            				<td>swalsh@lsu.edu</td>
+        				</tr>
+        				<tr>
+							<td><strong>Apollo Weaver</strong></td>
+            				<td>Assistant Professor of Scenic Design</td>
+            				<td>apolloweaver@lsu.edu</td>
+        				</tr>
+        				<tr>
+							<td><strong>Chris Wood</strong></td>
+            				<td>Professional-In-Residence, Scenic Technology</td>
+            				<td>chriswood@lsu.edu</td>
+        				</tr>
+
+    				</table>
+					</div>
+				</div>
+		</div>
+    </div>
+</div>
+	
+</div>
+<!-- End of Directory Section -->
+
+<!-- Start of Map Section -->
+<div id="Map" class="tabcontent animate__animated">
+<div class="hero-image-container">
+  <img src="{{f:64400250}}" alt="Hero Image" class="hero-image">
+  <div class="hero-text">
+    <h1 style="color: white">Campus Map</h1>
+  </div>
+</div>
+<iframe id="map_frame" width="1400" height="900" src="https://map.concept3d.com/?id=743&mch&sbh&tbh#!ct/22007?z/18?fh/?ph/?wd/?mc/30.415861739084004,-91.17872658059406;container=map-widget" frameborder="0" scrolling="no" border="0" overflow="hidden"></iframe>
+</div>
+<!-- End of Map Section -->
+	
+<!-- Start of Events Section -->
+<div id="Events" class="tabcontent animate__animated">
+<div class="hero-image-container">
+  <img src="{{f:64400251}}" alt="Hero Image" class="hero-image">
+  <div class="hero-text">
+    <h1 style="color: white">Events</h1>
+  </div>
+</div>
+	
+<section class="background-color">
+	<div class="row">
+		<div class="column" style="width:75%"><p class="lead">Our college is your premier source for performing arts on the LSU campus. We host over 300 events annually, many of which are free to attend. Scan the QR code with your device to purchase online tickets, view programs, find parking, and more.</p></div>
+		<div class="column" style="width:25%">
+			<center>
+      			<img src="{{f:64777926}}" style="width: 50%; padding-top: 5px;" alt="tickets qr code">
+			</center>
+		</div>
+	</div>
+</section>
+	
+  <div style="clear: both;"></div>
+<!-- Begin Calendar -->
+<div class="events-wrapper">
+<table class="ou-snippet-one-column-margin"><colgroup> <col /></colgroup>
+<tbody>
+<tr>
+<td>
+<div id="localist-widget-59891354" class="localist-widget"></div>
+<script defer="defer" type="text/javascript" src="https://calendar.lsu.edu/widget/view?schools=lsu&amp;departments=college_of_music_dramatic_arts&amp;days=180&amp;num=20&amp;container=localist-widget-59891354&amp;template=lsu-card"></script>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<!-- End Calendar -->
+</div>
+<!-- End of Events Section -->
+
+<!-- Start of Education Section -->
+<div id="Education" class="tabcontent animate__animated">
+<div class="hero-image-container">
+  <img src="{{f:64895392}}" alt="Hero Image" class="hero-image">
+  <div class="hero-text">
+    <h1 style="color: white">Education</h1>
+  </div>
+</div>
+<p style="margin-left: 50px; margin-right: 50px;" class="lead">Our college offers comprehensive programming in music, theatre, and film &amp; television, with a wide variety of degree options and concentrations. Regardless of your discipline, you'll find yourself immersed in a tight-knit community of peers equally passionate about the fine arts. Learn more about the opportunities available to<br />you within our college using the tabs below.</p>
+<div style="padding: 0px 12px;" class="tab-snippet">
+    <!-- Nav tabs -->
+    <ul class="nav nav-tabs">
+        <li class="nav-item">
+            <a class="nav-link active" data-toggle="tab" href="#Undergrad">Undergraduate Programs</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" data-toggle="tab" href="#Grad">Graduate Programs</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" data-toggle="tab" href="#Apply">How to Apply</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" data-toggle="tab" href="#PerformanceOpportunities">Performance Opportunities</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" data-toggle="tab" href="#StudentOrganizations">Student Organizations</a>
+        </li>
+    </ul>
+    <!-- Tab panes -->
+    <div class="tab-content">
+        <div id="Undergrad" class="tab-info active">
+			<div class="row">
+				<div class="column">
+					<div id="musicAccordionUndergrad">
+					<h2>School of Music</h2>
+					<button class="accordion">Bachelor of Music</button>
+						<div class="panel">
+  							<p>The Bachelor of Music degree prepares students for the world of musical performance. For this degree, we offer concentrations in:</p>
+							<div class="row">
+								<div class="column">
+								<ul>
+									<li>Brass</li>
+									<li>Composition</li>
+									<li>Harp</li>
+									<li>Percussion</li>
+									<li>Piano</li>	
+								</ul>
+								</div>
+								<div class="column">
+								<ul>
+									<li>Piano Pedagogy</li>
+									<li>Strings</li>
+									<li>Voice</li>
+									<li>Woodwinds</li>
+								</ul>
+								</div>
+							</div>
+							<p>Upon graduation, many students continue their studies at the master’s level, either at LSU or other prestigious institutions.</p>
+						</div>
+					<button class="accordion">Bachelor of Arts in Music</button>
+						<div class="panel">
+  							<p>The Bachelor of Arts in Music degree prepares students for careers in arts administration, music business/industry, human services. For this degree, we offer concentrations in:</p>
+							<ul>
+							<li>Academic Studies</li>
+							<li>Arts Administration</li>
+							<li>Church Music</li>
+							<li>Experimental Music &amp; Digital Media (EMDM)</li>
+							<li>Intradisciplinary Music</li>
+							<li>Jazz</li>
+							<li>Theatre</li>
+							</ul>
+							<p>Upon graduation, students have a wide variety of entrepreneurship opportunities and career paths available, or may pursue further study at the master’s level in music history or music theory.</p>
+						</div>
+					<button class="accordion">Bachelor of Music Education</button>
+						<div class="panel">
+  							<p>The Bachelor of Music Education degree prepares students to be successful teachers in elementary and secondary schools, while continuing to hone their artistry and performance skills through participation in major performing ensembles.</p>
+						<p>This program’s curriculum is capped by the semester-long, site-based student teaching experience in which the student is guided and nurtured by a professional music teacher and a university coordinator. Teacher certification is granted by the Louisiana State Department of Education. Students graduate as confident and able professional music teachers and are highly competitive in securing teaching positions.</p>
+						</div>
+					<button class="accordion">Bachelor of Music Therapy</button>
+						<div class="panel">
+  							<p>The Bachelor of Music Therapy prepares student musicians to become board-certified music therapists with student-centered guidance and an innovative academic curriculum. Students in the music therapy program will gain music knowledge and skills to then integrate into areas of clinical musicianship, clinical experience, and professional growth.</p>
+						<p>Students achieve this competence through rigorous and innovative academic programming in the areas of music, music therapy, research, behavioral and social science, and supervised music therapy clinical experiences in a variety of settings and populations of need</p>
+						</div>
+					<button class="accordion">Minor in Music</button>
+						<div class="panel">
+  							<p>The Minor in Music allows students to deepen their musical artistry while simultaneously pursuing other academic studies. To graduate with a minor in music, students must complete approximately 17 credit-hours of music courses, electives, and applied lessons, with at least 3 of those hours being at the 3000 and/or 4000 level.</p>
+						</div>
+					</div>
+				</div>
+				<div class="column">
+					<div id="theatreAccordionUndergrad">
+					<h2>School of Theatre</h2>
+					<button class="accordion">Bachelor of Fine Arts in Film &amp; Television</button>
+						<div class="panel">
+  							<p>Bachelor of Fine Arts (BFA) in Film &amp; Television is designed to be a pre-professional degree program for students interested in entering the film and television industry upon graduation. This program allows students to explore various aspects of the production process including directing, screenwriting, and cinematography.</p>
+						</div>
+					<button class="accordion">Bachelor of Arts in Theatre</button>
+						<div class="panel">
+  							<p>The Bachelor of Arts in Theatre degree provides students with a comprehensive view of theatre from a practical, theoretical, and historical viewpoint, while also providing them with direct production experiences and coursework tailored to their chosen area. For this degree, we offer concentrations in:</p>
+							<div class="row">
+								<div class="column">
+								<ul>
+									<li>Arts Administration</li>
+									<li>Design &amp; Technology</li>
+									<li>Performance</li>
+								</ul>
+								</div>
+								<div class="column">
+								<ul>
+									<li>Physical Theatre</li>
+									<li>Theatre Studies</li>
+								</ul>
+								</div>
+							</div>
+						</div>
+					<button class="accordion">Minor in Theatre</button>
+						<div class="panel">
+  							<p>The Minor in Theatre allows students to develop their theatrical skills while simultaneously pursuing other academic studies. To graduate with a minor in theatre, students must select a desired concentration and then complete 18 credit-hours (Arts Administration, Dance, Physical Theatre) or 19 (Theatre) credit-hours of courses and electives</p>
+						</div>
+					</div>
+				</div>
+			</div>
+        </div>
+        <div id="Grad" class="tab-info">
+			<div class="row">
+				<div class="column">
+					<div id="musicAccordionGrad">
+					<h2>School of Music</h2>
+					<button class="accordion">Master of Music</button>
+						<div class="panel">
+  							<p>The Master of Music degree is designed to continue students' fine arts studies with deeper focus and analysis. To allow for close alignment with a student’s desired sphere of focus, concentrations are offered in a wide variety of areas, such as performance, conducting, composition, collaborative piano, music theory, and more </p>
+						</div>
+					<button class="accordion">Doctoral of Musical Arts (DMA)</button>
+						<div class="panel">
+  							<p>The Doctor of Musical Arts degree is designed to prepare students to be artist-performers and conductors, in either university settings or the professional arena, with intensive coursework, seminars, and deep integration with a chosen area’s ongoing activities. This degree offers the following concentrations:</p>
+							<ul>
+							<li>Performance (Brass, String, Piano, Percussion, Woodwind)</li>
+							<li>Coducting (Choral, Orchestral, Wind)</li>
+							<li>Collaborative Piano</li>
+							</ul>
+						</div>
+					<button class="accordion">Doctor of Philosophy in Music (PhD)</button>
+						<div class="panel">
+  							<p>The Doctor of Philosophy degree is designed to prepare students to be artistic scholars, researchers, or composers in both professional and university settings, with a strong focus on scholarship and pushing the boundaries of musical creative activity. This degree offers the following concentrations:</p>
+							<ul>
+							<li>Composition</li>
+							<li>Experimental Music &amp; Digital Media</li>
+							<li>Music Education</li>
+							<li>Musicology</li>
+							<li>Music Theory</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="column">
+					<div id="theatreAccordionGrad">
+					<h2>School of Theatre</h2>
+					<button class="accordion">MFA in Acting</button>
+						<div class="panel">
+							<p>This program provides rigorous physical, vocal, emotional, and critical actor training approaches. The MFA acting students are the primary acting pool for the LSU Equity resident theatre company, Swine Palace. To promote holistic actors, candidates create and perform a 20- minute solo work of theatre as their thesis, concluding with an oral presentation on the creative process. A traditional written thesis option is also available.</p>
+						</div>
+					<button class="accordion">MFA in Theatre: Costume Technology &amp; Design</button>
+						<div class="panel">
+							<p>This program provides a solid foundation of costume construction techniques, design, rendering, and management skills. Classroom instruction is complimented by hands-on experience in a variety of areas including draping, flat patterning, millinery, crafts, tailoring, etc. All students will undertake production positions on LSU Mainstage and Swine Palace productions.</p>
+							<p><em>Teaching, design and shop manager opportunities are available to for qualified students.</em></p>
+						</div>
+					<button class="accordion">MFA in Theatre: Properties Technology &amp; Design</button>
+						<div class="panel">
+							<p>The LSU School of Theatre is proud to be one of the few departments in the country to offer a specialization in Properties Technology. The course of study includes a detailed examination of the many and varied items considered properties, and different techniques and materials that can be used to create them. The intention of this course of study is to develop advanced skills in woodworking, metalworking, paper-mâché, mold making &amp; casting, foam carving, upholstery, sewing, and management. The curriculum is augmented with classes in scenic and costume design, painting for the theatre, CAD, and dramaturgy. All students will undertake production positions on LSU Mainstage and Swine Palace productions.</p>
+							<p><em>Teaching, design and shop manager opportunities are available to for qualified students.</em></p>
+						</div>
+					<button class="accordion">MFA in Theatre: Scenic Technology &amp; Design</button>
+						<div class="panel">
+							<p>This program prepares the theatre artisan/manager to undertake positions with a wide scope of responsibility. The intention of the course of study is to develop skills in scenic technology and design especially in the areas of structural analysis and design, entertainment rigging, theatre machinery and automation, production management, set and lighting design, and theatre safety. There is some flexibility in the program to better serve the student’s academic needs. All students will undertake production positions on LSU Mainstage and Swine Palace productions.</p>
+							<p><em>Teaching, design and shop manager opportunities are available to for qualified students.</em></p>
+						</div>
+					<button class="accordion">Doctor of Philosophy in Theatre (PhD)</button>
+						<div class="panel">
+							<p>The PhD in Theatre at LSU is a scholarly degree consisting of two or more years of in-person coursework in theatre and performance history, theory, criticism, and practice. This coursework then leads to the student proposing, researching, writing, and defending a substantial intervention into a critical subfield of theatre and performance studies (i.e., the dissertation.) We welcome dedicated researchers and practitioners who seek to complement their production skills with a rigorous engagement with theatre history, theory, and criticism.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+        <div id="Apply" class="tab-info">
+			<p class="lead">We are committed to training leaders in the arts by adapting to meet the needs of the 21st-century artist. Our students are immersed in a curriculum promoting flexibility, discipline, communication, technology, and artistic expression, across all of our fields.</p>
+			<p><strong>Ready to get started? Learn how to apply by selecting a tab below.</strong></p>
+			<div id="applyAccordion">
+				<button class="accordion">Undergraduate Admissions</button>
+					<div class="panel">
+						<div class="row">
+							<div class="column" style="width: 70%">
+								<p class="lead">Undergraduate students who wish to enroll in our college must first apply to LSU, which uses the Common Application for first-year applicants. The Common App serves as the application for admission, as well as the application for all merit-based scholarships offered by LSU. This application is also used as your Ogden Honors College application, if you are interested. Scan the QR code to learn more.</p>
+								<p><em>If you are applying for a School of Music degree program, you will also need to complete an audition process in tandem with your application to LSU. To learn more, please visit the Music Auditions dropdown on this page.</em></p>
+								<p>&nbsp;</p>
+							</div>
+							<div class="column" style="width: 30%">
+								<center><img src="{{f:65289511}}" style="width: 80%; padding-top: 10px" alt="placeholder qr code"></center>
+							</div>
+						</div>
+					</div>
+				<button class="accordion">Graduate Admissions</button>
+					<div class="panel">
+						<div class="row">
+							<div class="column" style="width: 70%">
+								<p class="lead">Graduate students who wish to enroll in our college must first apply to the LSU Graduate School. The Graduate School evaluation entails a review of your resume or curriculum vita (CV), transcripts, TOEFL, IELTS, and PTE Scores (for international applicants), or degree certificates/diplomas (for international applicants). Following this step, our college determines your final admissibility to the degree program. Scan the QR code to learn more.</p>
+							</div>
+							<div class="column" style="width: 30%">
+								<center><img src="{{f:65289509}}" style="width: 80%; padding-top: 10px" alt="placeholder qr code"></center>
+							</div>
+						</div>
+					</div>
+				<button class="accordion">Music Auditions</button>
+					<div class="panel">
+						<div class="row">
+							<div class="column" style="width: 70%">
+								<p class="lead">Your audition to enter the School of Music may be in-person or virtual, depending on your audition area. The requirements differ for each area as well, so be sure to check to see what applies to you. On-campus auditions are held during a few specific audition days each year. If you choose this option when filling out your application, you will be notified by our Office of Student Success of your audition date and time. Scan the QR code to learn more.</p>
+							</div>
+							<div class="column" style="width: 30%">
+								<center><img src="{{f:65289508}}" style="width: 80%; padding-top: 10px" alt="placeholder qr code"></center>
+							</div>
+						</div>
+					</div>
+				<button class="accordion">Film &amp; Television Requirements</button>
+					<div class="panel">
+						<div class="row">
+							<div class="column" style="width: 70%">
+								<p class="lead">The Bachelor of Fine Arts (BFA) in Film &amp; Television is designed as a preprofessional degree program for students interested in entering the film and television industry upon graduation. This is a selective admissions program which requires prospective students to submit additional application materials for admissions consideration. Scan the QR code to learn more.</p>
+							</div>
+							<div class="column" style="width: 30%">
+								<center><img src="{{f:65291081}}" style="width: 80%; padding-top: 10px" alt="placeholder qr code"></center>
+							</div>
+						</div>
+					</div>
+				<button class="accordion">Financial Aid</button>
+					<div class="panel">
+						<div class="row">
+							<div class="column" style="width: 70%">
+								<p class="lead">For undergraduates, the Common App serves as the application for all merit-based scholarships offered by LSU. Graduate students are eligible for grants, fellowships, and employment through their institution. We are committed to being a smart investment in your educational journey; LSU typically offers over $1 billion in financial aid and scholarship awards annually. Scan the QR code to learn more.</p>
+							</div>
+							<div class="column" style="width: 30%">
+								<center><img src="{{f:65289510}}" style="width: 80%; padding-top: 10px" alt="placeholder qr code"></center>
+							</div>
+						</div>
+					</div>
+			</div>
+		</div>
+        <div id="PerformanceOpportunities" class="tab-info">
+			<div class="row">
+				<div class="column" style="width: 80%;">
+		            <p class="lead">Interested in joining our vibrant musical community? Ensemble auditions are open to all majors at LSU – held at the start of each academic year or semester – and accessible through an easy three-step process:</p>
+					<ol>
+						<strong><li>Scan the QR code to explore each area's audition requirements and repertoire.</li></strong>
+						<li>Register / sign-up for auditions by each area's specified deadline</li>
+						<li>Start practicing! Once the start of the semester arrives, you will audition in person or submit a video, depending on the area.</li>
+					</ol>
+				</div>
+				<div class="column" style="width: 20%;">
+					<center><img src="{{f:64876751}}" style="width: 100%" alt="placeholder qr code"></center>
+				</div>
+			</div>
+			<div class="row"><img src="{{f:65290906}}" alt="orchestra" width="100%" height="100%"></div>
+        </div>
+        <div id="StudentOrganizations" class="tab-info">
+            <p class = "lead">Get involved! We encourage all of our students to connect with the various clubs and professional organizations associated with our college. These include:</p>
+			<div id="studentOrgsAccordion">
+				<button class="accordion">College Council (LSU Student Government)</button>
+					<div class="panel">
+						<p>The Music &amp; Dramatic Arts College Council serves as a liaison between Music &amp; Dramatic Arts students, faculty, staff, and LSU Student Government. A core value and passion of the Council is improving student’s college experience. By raising money, putting on interactive events, and publicizing talents, the Council provides open lines of communication for student voices to be heard. Councils usually consist of five representatives, who are elected during the LSU Student Government’s spring and fall elections.</p>
+					</div>
+				<button class="accordion">Delta Rouge</button>
+					<div class="panel">
+						<p>We are a student organization that focuses on encouraging participation for students interested in film and television within the School of Theatre. We are here to help students create content, connect with other film students, and foster a community of film.</p>				
+					</div>
+				<button class="accordion">Kappa Kappa Psi - Beta Gamma Chapter</button>
+					<div class="panel">
+						<p>Kappa Kappa Psi is an honorary service fraternity that serves the college or university band programs through service projects, fundraisers, social events, and other projects as needed. The fraternity is located at more than 150 colleges and universities. The Beta Gamma chapter of Kappa Kappa Psi was formed at LSU on May 16, 1948. In 1988, the chapter merged with LSU’s chapter of Tau Beta Sigma, the national honorary service sorority for college bands, and created a unified, co-ed organization. The Beta Gamma chapter serves the Department of Bands and the School of Music. Students interested in becoming members may submit applications to join at the beginning of each semester.</p>
+					</div>
+				<button class="accordion">Kids' Orchestra</button>
+					<div class="panel">
+						<p>The mission of the Kids' Orchestra is to build a community of creative, confident, and socially engaged students through music education. We serve elementary-age children across East Baton Rouge Parish and provide them with the opportunity to study music, learn an instrument, and practice the art of performance. As an El Sistema-inspired organization, we have adopted the guiding philosophy that music education can create great musicians and positively change the life trajectory of children in a given community.</p>				
+					</div>
+				<button class="accordion">Musical Theatre Club</button>
+					<div class="panel">
+						<p>The Musical Theatre Club at LSU (MTC@LSU) provides opportunities to LSU's undergraduate and graduate students who have a passion for musical theatre. The organization's mission is to educate students in musical theatre. Additionally, MTC@LSU harnesses an appreciation for the genre of music theatre not only in the students, but in the Baton Rouge community as well. Club members can gain experience in all areas of musical theatre, from producing, to singing/dancing/acting, to playing in the orchestra, to technical production.</p>
+					</div>
+				<button class="accordion">Sigma Alpha Iota - Sigma Phi Chapter</button>
+					<div class="panel">
+						<p>Sigma Alpha Iota (SAI), an international music fraternity for women, was organized in 1903 in Ann Arbor, Michigan. The organization and its members foster interests in music and promote social contact among persons sharing this interest. The Sigma Phi chapter was founded at LSU in 1926. The Sigma Phi chapter recruits new members during both the fall and spring semesters. LSU students interested in joining SAI must be enrolled as a full-time student, must have taken at least one music course, must have a minimum of a 2.5 grade-point average, and must have a great love of music. Students may not join during their first semesters but are encouraged to apply for admission during their following semesters.</p>						
+					</div>
+				<button class="accordion">University Theatre Alliance</button>
+					<div class="panel">
+						<p>The University Theatre Alliance is an organization of, by, and for the students of the School of Theatre. The executive board, along with its members and a team of coordinators, promotes a cohesive, supportive, effective, and convivial environment for creation and education. General membership meetings are held on a particular Wednesday of every month, typically announced on social media. Through social events, workshops, staged readings, and performance opportunities, organized by the student body, we become a stronger, smarter, and more experienced team of artists.</p>	
+					</div>
+			</div>
+			<p><em>Any statements and opinions given by student-led organizations are their own. Any statements and opinions included in these pages are not those of Louisiana State University, LSU Board of Supervisors, or the Louisiana Board of Regents.</em></p>
+        </div>
+    </div>
+</div>
+	
+</div>
+<!-- End of Education Section -->
+
+<!-- Start of Giving Section -->
+<div id="Giving" class="tabcontent animate__animated">
+<div class="hero-image-container">
+  <img src="{{f:64400262}}" alt="Hero Image" class="hero-image">
+  <div class="hero-text">
+    <h1 style="color: white">Giving</h1>
+  </div>
+</div>
+<p class="lead" style="margin-left: 50px; margin-right: 50px;">The College of Music &amp; Dramatic Arts benefits immeasurably from the extraordinary support of alumni, patrons and friends across the globe.</p>
+<p style="margin-left: 50px; margin-right: 50px;">Your gifts - past, present and future - invest in our students and the communities which the College serves. Individual and corporate support is critical, as we continue to make outstanding contributions to the creative culture, enriching people’s lives through performances and educational outreach. Any contribution that you can make on any level is deeply appreciated.</p>
+<p style="margin-left: 50px; margin-right: 50px;">Our accomplished students and faculty recognize the significance of your support. You will have opened up opportunity and celebrated their creative promise. We sincerely thank you for championing creativity by supporting the LSU College of Music &amp; Dramatic Arts!</p>
+<div style="padding: 0px 12px;" class="tab-snippet">
+    <!-- Nav tabs -->
+    <ul class="nav nav-tabs">
+        <li class="nav-item">
+            <a class="nav-link active" data-toggle="tab" href="#Impact-Fund">Impact Fund</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" data-toggle="tab" href="#Deans-Circle">Dean's Circle</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" data-toggle="tab" href="#Re-envisioning-the-School-of-Music">Re-envisioning the School of Music</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" data-toggle="tab" href="#Other-Ways-to-Support">Other Ways to Support</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" data-toggle="tab" href="#How-To-Give">How to Give</a>
+        </li>
+    </ul>
+
+    <!-- Tab panes -->
+    <div class="tab-content">
+        <div id="Impact-Fund" class="tab-info active">
+            <p class="lead">The Impact Fund of the College of Music &amp; Dramatic Arts provides necessary educational and professional prospects to advance our performing arts students at LSU.</p>
+            <p>Our students need a broad array of opportunities to hear guest speakers, be able to extend their art to unique venues, travel to important conferences that address emerging trends in the performing arts, and engage in other activities that stretch their talents and ignite their curiosity. This will allow them to increase their capacity to negotiate collective creativity, elicit different goals and interests—in themselves and others-and participate in integrative problem solving.</p>
+			<p>There is also a need to provide collaborative opportunities among the members of our creative community—opportunities that go beyond the classroom and into other universities and the community at large. Experiences outside of the classroom, studio or stage provide our students with a well-rounded education that will equip them with the broad range of skills to be successful artist-citizens in the 21st century.</p>
+        </div>
+        <div id="Deans-Circle" class="tab-info">
+            <p class="lead">The Dean’s Circle is a group of alumni, parents, and friends of the College of Music &amp; Dramatic Arts who support its students and faculty through annual, unrestricted, gifts.</p>
+            <p>These gifts are used at the discretion of the Dean of the college to support opportunities of student and faculty excellence, artistic endeavors, and annual programs. Membership provides a variety of benefits, most notably the guarantee that your philanthropy is enabling the development of artists and educators who will become the gold standard of the arts and arts education in this state, the nation, and the world.</p>
+        </div>
+        <div id="Re-envisioning-the-School-of-Music" class="tab-info">
+            <p class="lead">We are in the final stages of planning an approximately $4.9 MM renovation to the School of Music building</p>
+			<p>The John G. Turner &amp; Jerry G. Fischer Recital Hall will feature new seating, acoustical treatments, and a technical balcony for antiphonal work. The School of Music lobby, a vital nexus for our students and artists, will be expanded into a large open forum for collaboration and socialization.</p>
+			<p>This comprehensive re-envisioning of our most-used public spaces will completely transform everyday life in the College of Music &amp; Dramatic Arts and give students the physical spaces they need to work together on projects and inspire new artistic works. This project reaffirms our commitment to being a premiere performing arts institution and cultural anchor for the city of Baton Rouge. These renovations are possible thanks to the generous contribution of donors, alumni, and friends of the LSU College of Music &amp; Dramatic Arts.</p>
+        </div>
+        <div id="Other-Ways-to-Support" class="tab-info">
+            <p class="lead">There are numerous individual support funds available within the College of Music &amp; Dramatic Arts, allowing you to direct your support to the area or discipline you feel the strongest connection with.</p>
+            <p>Some of these funds include:</p>
+			<ul>
+				<li><strong>General Scholarships</strong></li>
+				<li><strong>Voice/Opera Student Support Fund</strong></li>
+				<li><strong>Theatre Support Fund</strong></li>
+				<li><strong>Band Development Fund</strong></li>
+				<li><strong>Friends of LSU Dance Fund</strong></li>
+				<li><strong>Kenneth Fulton Choral Studies Scholarship Fund</strong></li>
+				<li><strong>The Four Notes Club</strong></li>
+				<li><strong>...and many more!</strong></li>
+			</ul>
+        </div>
+        <div id="How-To-Give" class="tab-info">
+          	<div class="row">
+				<div class="column" style="width: 80%;">
+		            <p class="lead">We are grateful for your generous support! Gifts to our college are managed by the LSU Foundation, which is the primary fundraising entity for academics at LSU. As a 501(c)3 organization, the LSU Foundation serves as trustee for most of the endowed funds and other private assets contributed for the benefit of LSU.</p>
+					<p class="lead">To give to the LSU College of Music &amp; Dramatic Arts:</p>
+					<ol>
+						<strong><li>Scan the QR code with your personal device to visit the LSU Foundation’s secure online giving portal.</li></strong>
+						<li>Select a desired fund by browsing, searching, or selecting our college from the “Academics” tab.</li>
+						<li>Provide your gift information.</li>
+					</ol>
+				</div>
+				<div class="column" style="width: 20%;">
+					<center><img src="{{f:64877547}}" style="width: 100%; padding-top:10px" alt="placeholder qr code"></center>
+				</div>
+			</div>
+        </div>
+    </div>
+</div>
+</div>
+<!-- End of Philanthropy Section -->
+
+
+</div>
+</main>
+<!-- End of Main Section -->
+
+<!-- JavaScript Files Begin Here -->
+
+<!-- **IDLE**  Must be on each individual page, DOES NOT work with script src call -->
+<script>
+(function() {
+
+    const idleDurationSecs = 300;    // X number of seconds
+    const redirectUrl = '/cmda/_sandbox/signage-prototype/pages/signage-prototype-idle.html';  // Redirect idle users to this URL
+    let idleTimeout; // variable to hold the timeout, do not modify
+
+    const resetIdleTimeout = function() {
+
+        // Clears the existing timeout
+        if(idleTimeout) clearTimeout(idleTimeout);
+
+        // Set a new idle timeout to load the redirectUrl after idleDurationSecs
+        idleTimeout = setTimeout(() => location.href = redirectUrl, idleDurationSecs * 1000);
+    };
+
+    // Init on page load
+    resetIdleTimeout();
+
+    // Reset the idle timeout on any of the events listed below
+    ['click', 'touchstart', 'mousemove'].forEach(evt => 
+        document.addEventListener(evt, resetIdleTimeout, false)
+    );
+
+})();
+</script>
+
+<!-- **SIDE NAV** Must be on each individual page, DOES NOT work with script src call -->
+<script>
+// Variable to store the time of the last tab click
+var lastTabClickTime = 0;
+// Timeout duration in milliseconds (e.g., 300ms)
+var tabClickTimeout = 2000;
+
+function openCity(evt, cityName) {
+  var currentTime = new Date().getTime();
+  // Check if the clicked tab is within the timeout duration
+  if (currentTime - lastTabClickTime < tabClickTimeout) {
+    // If it is, do nothing and return
+    return;
+  }
+
+  // Update the last tab click time
+  lastTabClickTime = currentTime;
+
+  // Check if the clicked tab is already active
+  if (evt.currentTarget.className.includes('active')) {
+    // If it is, do nothing and return
+    return;
+  }
+  
+  // Variables for tab contents and tab links
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  tablinks = document.getElementsByClassName("tablinks");
+
+  // First, find the currently active (displayed) tab content and fade it out
+  var activeTabContent = Array.from(tabcontent).find(function (content) {
+    return content.style.display === "block";
+  });
+
+  // If there is an active tab content, fade it out
+  if (activeTabContent) {
+    activeTabContent.classList.add("animate__fadeOut");
+    activeTabContent.addEventListener('animationend', function handler() {
+      activeTabContent.classList.remove("animate__fadeOut", "animate__animated");
+      activeTabContent.style.display = "none";
+      activeTabContent.removeEventListener('animationend', handler);
+
+      // Now display and animate the new tab content
+      showAndAnimateNewTabContent(cityName);
+    }, { once: true });
+  } else {
+    // If there was no active tab content, directly show and animate the new tab content
+    showAndAnimateNewTabContent(cityName);
+  }
+
+  // Update tab links appearance
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" active", "");
+  }
+  evt.currentTarget.className += " active";
+}
+
+function showAndAnimateNewTabContent(cityName) {
+  var newTabContent = document.getElementById(cityName);
+  newTabContent.classList.add("animate__animated", "animate__fadeInUp");
+  newTabContent.style.display = "block";
+}
+
+// Get the element with id="defaultOpen" and click on it to initialize the default tab
+document.getElementById("defaultOpen").click();
+</script>
+
+<!-- **DATE AND TIME** -->
+<script src="{{f:60373250}}"></script>
+
+<!-- **WEATHER** -->
+<script src="{{f:60604703}}"></script>
+	
+<!-- **TAB SNIPPET** -->
+<script src="{{f:62598664}}"></script>
+	
+<!-- **NO LINKS** -->
+<script src="{{f:62599158}}"></script>
+	
+<!-- **ACCORDION** -->
+<script src="{{f:63358165}}"></script>
+	
+<!-- JavaScript Files End Here -->
+</body>
+	
+</html>

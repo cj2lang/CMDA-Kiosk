@@ -1,0 +1,59 @@
+/* Styles for the Slideshow used in the CMDA Digital Signage Project */
+
+.slideshow-container {
+    position: relative;
+    width: 100%;
+    height: 135%;
+    overflow: hidden; /* Added to ensure slides outside the container are not visible */
+  }
+  
+  .slide {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: block; /* Updated from none to block */
+    opacity: 0; /* Make slides invisible by default */
+    transition: transform 0.5s ease, opacity 0.5s ease; /* Smooth transition for sliding and fading */
+  }
+  
+  /* New classes for managing slide transitions */
+  .slide-active {
+    opacity: 1; /* Make the active slide visible */
+    transform: translateX(0%); /* Ensure the slide is centered */
+  }
+  
+  .slide-next {
+    transform: translateX(100%);
+  }
+  
+  .slide-prev {
+    transform: translateX(-100%);
+  }
+  
+  .prev, .next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 24px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    cursor: pointer;
+  }
+  
+  .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+  
+  /* Ensuring images fill the slide */
+  .slide img {
+    width: 100%; /* Make images fill the width of the slide */
+    height: 100%; /* Make images fill the height of the slide */
+    object-fit: cover; /* Maintain aspect ratio while covering the slide area */
+  }
+  
